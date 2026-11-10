@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head><meta name="google-adsense-account" content="ca-pub-7493976070389751">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="時給計算・月給からの時給換算を無料で。勤務時間や給与条件を入力して働き方の比較に役立てられます。" name="description"/>
+<title>時給計算｜月給から時給を無料で換算 - 暮らしの計算ツール</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;color:#182b45;background:#f4f7fb}*{box-sizing:border-box}body{margin:0}header{background:#123f75;color:white;padding:20px 16px}header .wrap{max-width:940px;margin:auto}header a{color:white;text-decoration:none}nav{padding:12px 16px;text-align:center;background:#e8f0fa;display:flex;gap:16px;justify-content:center;flex-wrap:wrap}a{color:#1266ba}main{max-width:940px;margin:28px auto;padding:0 16px}h1{font-size:1.8rem;margin:0 0 8px}h2{font-size:1.2rem;margin:0 0 16px}h3{font-size:1.04rem}p,li{line-height:1.7}.muted{color:#52657b;font-size:.92rem}.panel{background:#fff;border:1px solid #dce5f0;border-radius:14px;padding:24px;margin:0 0 20px;box-shadow:0 3px 14px #173b6810}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.field label{display:block;font-weight:650;margin-bottom:7px}.field input,.field select{width:100%;padding:12px;border:1px solid #9fb1c7;border-radius:8px;font-size:1rem;background:white}.field input:focus,.field select:focus{outline:2px solid #2775cf;outline-offset:1px}.hint{font-size:.82rem;color:#52657b;margin:6px 0 0}.actions{margin-top:20px;display:flex;gap:10px;flex-wrap:wrap}button{background:#1266ba;color:white;border:0;border-radius:9px;padding:13px 22px;font-weight:700;font-size:1rem;cursor:pointer}button:hover{background:#0e4e91}.secondary{background:#e7eef7;color:#173b61}.secondary:hover{background:#d7e3f3}.total{font-size:2rem;font-weight:800;color:#075aaf;margin:8px 0}.result-row{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #e5ebf2;padding:12px 0}.result-row span:last-child{font-weight:700;text-align:right}.note{background:#fff8e9;border-left:4px solid #d69b24;padding:13px 16px;border-radius:6px}.error{color:#b42318;font-weight:650;margin-top:12px}.small{font-size:.85rem}footer{text-align:center;padding:20px;color:#5e6e80}.formula{background:#eef5ff;padding:12px 15px;border-radius:8px;line-height:1.8}details{border-top:1px solid #e5ebf2;padding:13px 0}summary{font-weight:700;cursor:pointer}#results[hidden]{display:none}@media(max-width:600px){.grid{grid-template-columns:1fr}.panel{padding:17px}.total{font-size:1.7rem}nav{gap:10px}}
+</style>
+<style>
+/* 2026 site-wide visual refresh: styles only, calculator JS untouched */
+:root{--ui-ink:#17365e;--ui-blue:#2787e8;--ui-border:#e0eaf5;--ui-sky:#edf7ff;--ui-shadow:0 10px 30px rgba(43,99,153,.075)}
+html{scroll-behavior:smooth}body{background:linear-gradient(180deg,#f0f8ff 0,#f8fbff 460px,#f8fbff 100%)!important;color:var(--ui-ink)!important;font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif!important;line-height:1.65}*{box-sizing:border-box}
+.site-top{background:rgba(255,255,255,.97)!important;border-bottom:1px solid #e1edf8!important;padding:0!important;color:var(--ui-ink)!important;box-shadow:0 3px 16px rgba(33,98,158,.04)}
+.site-top .site-top-inner{max-width:1180px;margin:auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.site-brand{display:flex;align-items:center;gap:10px;text-decoration:none!important;color:#17518c!important;font-size:1.18rem;font-weight:800;line-height:1.25}.brand-mark{display:grid;place-items:center;width:39px;height:39px;border-radius:11px;background:linear-gradient(145deg,#4b9ded,#2175d6);color:white;font-size:23px;box-shadow:0 5px 12px #448bd42b}.brand-sub{display:block;font-size:.67rem;color:#7d91a9;font-weight:500;margin-top:2px}
+.site-nav{background:#fff!important;border-bottom:1px solid #e5edf6!important;padding:0!important;text-align:left!important}.site-nav-inner{max-width:1180px;margin:auto;padding:8px 18px;display:flex;gap:5px;align-items:center;flex-wrap:wrap;justify-content:center}.site-nav a{display:inline-flex;align-items:center;gap:5px;padding:9px 12px!important;border-radius:10px;color:#526d8b!important;text-decoration:none!important;font-size:.88rem;font-weight:700;white-space:nowrap}.site-nav a:hover,.site-nav a[aria-current="page"]{background:#eaf4ff;color:#1874d0!important}.nav-emoji{font-size:1.1rem;line-height:1}
+main{max-width:1120px!important;margin:24px auto 40px!important;padding:0 18px!important}
+.ui-hero{position:relative;overflow:hidden;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(245px,.8fr);align-items:center;gap:16px;background:linear-gradient(115deg,#f5fbff,#e8f5ff 70%,#e9f7f1);border:1px solid #dcecf8;border-radius:24px;padding:26px 32px 12px;margin:0 0 22px;box-shadow:var(--ui-shadow)}
+.ui-hero:before{content:"";position:absolute;width:250px;height:250px;border-radius:50%;background:#ffffff70;right:-65px;top:-130px}.ui-hero h1{font-size:clamp(1.65rem,3.3vw,2.55rem)!important;color:#143b70!important;letter-spacing:.01em;line-height:1.4;margin:7px 0 10px!important}.ui-hero p{font-size:.98rem!important;color:#55728f!important;line-height:1.85;margin:0 0 14px}.ui-eyebrow{display:inline-block;background:#fff;color:#3380c8;font-weight:750;font-size:.78rem;padding:5px 12px;border-radius:99px;box-shadow:0 3px 10px #438ac91c}.ui-art{width:100%;max-width:390px;justify-self:center;position:relative;z-index:1}.ui-art svg{width:100%;height:auto;display:block;filter:drop-shadow(0 7px 10px #6da5cf14)}
+.ui-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:0 0 24px}.ui-link{display:flex;align-items:center;gap:15px;text-decoration:none!important;background:white;border:1px solid #e2ecf7;border-radius:17px;padding:16px 18px;box-shadow:var(--ui-shadow);color:#1c4775!important;transition:transform .18s,box-shadow .18s}.ui-link:hover{transform:translateY(-3px);box-shadow:0 14px 26px #4d87c01c}.ui-link .ui-link-icon{width:53px;height:53px;border-radius:15px;background:#eaf5ff;display:grid;place-items:center;font-size:1.9rem;flex-shrink:0}.ui-link strong{display:block;font-size:1.05rem}.ui-link small{display:block;color:#748ca4;font-size:.8rem;margin-top:3px}.ui-link .ui-arrow{margin-left:auto;color:#2787e8;font-size:1.4rem}
+.ui-section-label{margin:28px 0 13px;font-size:1.22rem;color:#204f81}.ui-divider{border:0;border-top:1px solid #e3edf8;margin:22px 0}
+main .card,main .panel,main section.panel,main #result,main #results{border:1px solid var(--ui-border)!important;border-radius:18px!important;box-shadow:var(--ui-shadow)!important;background:#fff!important}main .card,main .panel{padding:clamp(17px,2.8vw,26px)!important}main h2{color:#214e81!important}main input,main select,main textarea{border:1px solid #cbdced!important;border-radius:9px!important;max-width:100%}main input:focus,main select:focus{outline:2px solid #65a8ed!important;outline-offset:1px}main button,main button[type="submit"]{border-radius:11px!important;background:#2987e6!important;color:white!important;box-shadow:0 4px 10px #2d80cf20}main button.secondary,main button[type="reset"]{background:#e9f3fd!important;color:#205789!important}main .hero{background:#eef7ff!important;border-radius:14px!important}main .metric,main .total-box,main .highlight{border-radius:13px!important}main .pill{background:#e9f5ff!important;color:#2776bd!important}main .info,main .warning{border-radius:11px!important}
+.site-footer{margin-top:30px;background:#fff!important;border-top:1px solid #e1edf8!important;text-align:center!important;padding:27px 18px!important;color:#71859a!important;font-size:.87rem}.site-footer a{color:#437aaa!important;text-decoration:none}.site-footer a:hover{text-decoration:underline}.site-footer-links{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 20px;margin-bottom:10px}
+@media(max-width:720px){.site-top .site-top-inner{padding:10px 15px;justify-content:center}.site-nav-inner{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;padding:8px 12px;-webkit-overflow-scrolling:touch}.site-nav a{font-size:.79rem;padding:8px 10px!important}.ui-hero{grid-template-columns:1fr;padding:20px 20px 4px;gap:0}.ui-hero h1{font-size:1.72rem!important}.ui-art{max-width:285px}.ui-links{grid-template-columns:1fr;gap:10px}.ui-link{padding:13px 15px}main{margin-top:16px!important;padding:0 13px!important}main .card,main .panel{padding:17px!important}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ui-link{transition:none}}
+</style><style>
+/* Shared A3 illustration system, scoped to prevent calculator style regressions */
+body{background:#edf7ff!important;color:#14366c}
+.site-header{position:relative!important;background:#fff!important;color:#12366d!important;border-bottom:1px solid #d7eafa!important;box-shadow:0 2px 15px #c9e1f144!important}
+.site-header .head-inner{max-width:1440px;margin:auto;padding:12px 28px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.site-header .brand{display:flex;align-items:center;gap:12px;color:#12366d!important;text-decoration:none!important;font-weight:700}
+.site-header .brand-mark{width:47px;height:47px;background:#268bf2;border-radius:12px;display:grid;place-items:center;color:white;font-size:26px;box-shadow:0 4px 0 #c0ddfa}
+.site-header .brand strong{display:block;font-size:20px;line-height:1.3}.site-header .brand small{display:block;color:#6680a4;font-size:11px;font-weight:400}
+.site-header .nav{display:flex;align-items:center;flex-wrap:wrap;gap:4px;background:transparent!important;border:0!important;padding:0!important}
+.site-header .nav a{display:inline-flex;align-items:center;gap:6px;padding:10px 12px;border-radius:12px;color:#174679!important;font-weight:700;font-size:13px;text-decoration:none!important}
+.site-header .nav a.active,.site-header .nav a:hover{background:#e7f3ff!important;color:#0879e8!important}
+.site-header .nav-icon{display:block;width:19px;height:19px;flex-shrink:0}
+main{max-width:1300px!important;margin:20px auto!important}
+main>.ui-hero.a3-banner{background:#e2f5ff var(--a3-banner) center center/cover no-repeat!important;min-height:260px!important;display:flex!important;align-items:center!important;padding:34px 43px!important;border-radius:22px!important;box-shadow:0 8px 26px #a3c9e733!important;border:1px solid #fff!important;position:relative!important;overflow:hidden!important;isolation:isolate}
+main>.ui-hero.a3-banner>div:first-child{width:53%!important;max-width:600px!important;position:relative!important;z-index:1!important}
+main>.ui-hero.a3-banner .ui-eyebrow{background:#fffffff0!important;color:#127be5!important;border:1px solid #c7e5ff!important;border-radius:99px!important;padding:7px 15px!important;display:inline-block!important;font-weight:700!important;font-size:13px!important}
+main>.ui-hero.a3-banner h1{color:#0c316b!important;font-size:clamp(26px,3.2vw,43px)!important;line-height:1.24!important;margin:15px 0!important}
+main>.ui-hero.a3-banner p{color:#184474!important;font-size:15px!important;line-height:1.8!important;max-width:560px!important}
+main>.ui-hero.a3-banner .ui-art{display:none!important}
+@media(max-width:760px){.site-header .head-inner{padding:12px 15px}.site-header .nav{width:100%;overflow-x:auto;flex-wrap:nowrap;white-space:nowrap}.site-header .nav a{padding:8px}.site-header .brand strong{font-size:18px}main>.ui-hero.a3-banner{min-height:300px!important;align-items:flex-start!important;padding:22px!important;background-position:67% center!important}main>.ui-hero.a3-banner>div:first-child{width:88%!important}main>.ui-hero.a3-banner h1{font-size:28px!important}main>.ui-hero.a3-banner p{font-size:12px!important;max-width:76%!important}}
+</style><style id="mobile-banner-readability">
+/* Mobile banner layout: identical to the approved home and salary pages. */
+@media (max-width:650px){
+ main>.ui-hero.a3-banner{display:flex!important;flex-direction:column!important;align-items:stretch!important;justify-content:flex-start!important;min-height:0!important;padding:20px 18px 0!important;background-image:none!important;background-color:#eaf7ff!important;overflow:hidden!important;gap:0!important}
+ main>.ui-hero.a3-banner>div:first-child{width:100%!important;max-width:100%!important;flex:none!important;position:relative!important;z-index:2!important}
+ main>.ui-hero.a3-banner h1{font-size:clamp(25px,7vw,30px)!important;line-height:1.3!important;margin:12px 0!important}
+ main>.ui-hero.a3-banner p{max-width:100%!important;font-size:13px!important;line-height:1.65!important;margin:0!important}
+ main>.ui-hero.a3-banner::before{content:''!important;display:block!important;position:relative!important;inset:auto!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;border-radius:0!important;width:calc(100% + 36px)!important;height:auto!important;aspect-ratio:4.5/1!important;flex-shrink:0!important;margin:12px -18px 0!important;background:var(--a3-banner) center center/100% 100% no-repeat!important;opacity:1!important;transform:none!important;pointer-events:none!important;z-index:0!important}
+ main>.ui-hero.a3-banner::after{display:none!important;content:none!important}
+}
+</style><link href="https://babydragon-zh.github.io/hourly.html" rel="canonical"/><style id="phase2-comparison-style">.phase2-panel{margin:24px 0;padding:clamp(18px,3vw,28px);background:#fff;border:1px solid #d5e5f3;border-radius:18px;box-shadow:0 5px 18px #c3d7e522;color:#183b66;line-height:1.8}.phase2-panel h2{margin:0 0 12px;color:#214e81}.phase2-panel p{margin:8px 0 16px}.phase2-controls{display:flex;flex-wrap:wrap;align-items:end;gap:14px;margin:14px 0}.phase2-controls label{display:grid;gap:5px;min-width:145px;font-weight:600}.phase2-controls input{width:150px;max-width:100%;padding:10px;border:1px solid #c5d9e9;border-radius:9px;font:inherit}.phase2-panel button{padding:10px 18px;background:#2987e6;color:white;border:0;border-radius:10px;font-weight:700;cursor:pointer}.phase2-table-wrap{overflow-x:auto}.phase2-table{width:100%;border-collapse:collapse;min-width:390px;font-size:.94rem}.phase2-table th,.phase2-table td{border-bottom:1px solid #e4edf6;padding:10px;text-align:right}.phase2-table th:first-child,.phase2-table td:first-child{text-align:left}.phase2-table thead{background:#edf7ff}.phase2-muted{font-size:.87rem;color:#627b94}.phase2-error{color:#b02929;font-weight:600}@media(max-width:650px){.phase2-panel{padding:17px}.phase2-controls label{min-width:0;flex:1 1 130px}.phase2-controls input{width:100%}}</style></head>
+<body>
+<header class="site-header"><div class="head-inner"><a class="brand" href="./index.html"><span class="brand-mark">▦</span><span><strong>暮らしの計算ツール</strong><small>暮らしの計算を、もっとシンプルに</small></span></a><nav aria-label="メインナビゲーション" class="nav"><a class="" href="./index.html"><img alt="" aria-hidden="true" class="nav-icon" src="./assets/nav-home.svg"/>ホーム</a><a class="" href="./salary.html"><img alt="" aria-hidden="true" class="nav-icon" src="./assets/nav-salary.svg"/>年収・手取り</a><a class="" href="./overtime.html"><img alt="" aria-hidden="true" class="nav-icon" src="./assets/nav-overtime.svg"/>残業代</a><a class="active" href="./hourly.html"><img alt="" aria-hidden="true" class="nav-icon" src="./assets/nav-hourly.svg"/>時給</a><a class="" href="./mortgage.html"><img alt="" aria-hidden="true" class="nav-icon" src="./assets/nav-mortgage.svg"/>住宅ローン</a><a class="" href="./car.html"><img alt="" aria-hidden="true" class="nav-icon" src="./assets/nav-car.svg"/>車の維持費</a></nav></div></header>
+<main><section aria-label="ページの紹介" class="ui-hero a3-banner" style="--a3-banner:url('./assets/banner-hourly.webp')"><div><span class="ui-eyebrow">無料・登録不要  |  暮らしの計算ツール</span><h1>時給計算</h1><p class="muted">月給と時給の換算や、働き方の比較に。 勤務日数・実働時間・賞与を設定して試算できます。</p></div></section>
+<section class="panel">
+<h2>① 換算元の給与を入力</h2>
+<div class="grid">
+<div class="field"><label for="mode">計算の種類</label><select id="mode"><option value="hourly">時給から月給・年収を計算</option><option value="monthly">月給から時給・年収を計算</option><option value="annual">年収から時給・月給を計算</option></select></div>
+<div class="field"><label for="pay" id="payLabel">時給（円）</label><input id="pay" inputmode="decimal" min="0" step="any" type="number" value="1500"/><p class="hint" id="payHint">税引前の時給を入力してください。</p></div>
+</div>
+</section>
+<section class="panel">
+<h2>② 勤務条件を設定</h2>
+<div class="grid">
+<div class="field"><label for="hours">1日の実働時間（時間）</label><input id="hours" inputmode="decimal" max="24" min="0.1" step="any" type="number" value="8"/><p class="hint">休憩時間を除いた実働時間。</p></div>
+<div class="field"><label for="days">週の勤務日数（日）</label><input id="days" inputmode="decimal" max="7" min="0.1" step="any" type="number" value="5"/><p class="hint">週あたりの平均勤務日数。</p></div>
+<div class="field"><label for="weeks">年間の勤務週数（週）</label><input id="weeks" inputmode="decimal" max="52.18" min="0.1" step="any" type="number" value="52"/><p class="hint">長期休業や無給休暇を考慮して調整。52週なら毎週勤務する想定です。</p></div>
+<div class="field"><label for="bonus">年間賞与（円）</label><input id="bonus" inputmode="decimal" min="0" step="any" type="number" value="0"/><p class="hint">月給・年収からの換算では、年収に含まれる賞与額を入力。時給からの換算では、年収に加える賞与額。</p></div>
+</div>
+<p class="hint">年間勤務時間 ＝ 1日の実働時間 × 週の勤務日数 × 年間の勤務週数。月平均勤務時間は年間勤務時間÷12です。年間の勤務週数は52.18週以下で設定してください。</p>
+<div class="actions"><button id="calculate" type="button">計算する</button><button class="secondary" id="reset" type="button">入力をリセット</button></div>
+<p aria-live="polite" class="error" id="error" role="alert"></p>
+</section>
+<section aria-live="polite" class="panel" hidden="" id="results">
+<h2>③ 計算結果</h2>
+<p class="muted" id="resultDescription"></p>
+<div class="total" id="headline"></div>
+<div class="result-row"><span>換算時給（税引前）</span><span id="hourlyResult"></span></div>
+<div class="result-row"><span>月平均給与（税引前・賞与除く）</span><span id="monthlyResult"></span></div>
+<div class="result-row"><span>年収（税引前・賞与込み）</span><span id="annualResult"></span></div>
+<div class="result-row"><span>年間勤務時間</span><span id="annualHours"></span></div>
+<div class="result-row"><span>月平均勤務時間</span><span id="monthlyHours"></span></div>
+<div class="result-row"><span>年間賞与</span><span id="bonusResult"></span></div>
+<p class="small muted" id="explanation"></p>
+<p class="small muted">表示金額のみ1円単位で四捨五入。内部計算は丸めずに行います。</p>
+</section>
+<section class="phase2-panel" aria-labelledby="p2-hourly-title"><h2 id="p2-hourly-title">勤務日数を変えたら、月給はいくら？</h2><p>現在入力している給与と勤務条件をもとに、週3日・4日・5日勤務を比較します。時給制なら収入の差、月給制・年収制なら勤務時間あたりの給与の違いが分かります。</p><div class="phase2-controls"><button type="button" id="p2-hourly-run">現在の入力で比較する</button></div><p class="phase2-error" id="p2-hourly-error" role="alert"></p><div class="phase2-table-wrap"><table class="phase2-table"><thead><tr><th>週の勤務日数</th><th>月平均勤務時間</th><th>月平均給与（賞与除く）</th><th>換算時給</th></tr></thead><tbody id="p2-hourly-body"></tbody></table></div><p class="phase2-muted">時給入力時は時給を固定、月給・年収入力時は給与を固定して比較します。賞与・税金・社会保険料・残業代は比較表の月給には含めません。実際の給与条件が勤務日数に連動するとは限りません。</p></section><section class="panel seo-guide"><h2>月給から時給に換算する具体例</h2><p>月給24万円、1日8時間、週5日、年間52週として比較すると、年間勤務時間は「8時間 × 5日 × 52週 ＝ 2,080時間」です。賞与を含めない年収相当額は「24万円 × 12か月 ＝ 288万円」なので、時給換算は約1,385円となります。</p><p>これは<strong>給与額を勤務時間で割った比較用の数値</strong>です。最低賃金の適用判断や残業代の算定基礎時給を、そのまま確定するものではありません。</p><h2>時給比較で気をつけたいこと</h2><ul><li>実働時間を入力し、休憩時間は含めないようにします。</li><li>賞与を含めるかどうかを統一して比較します。</li><li>有給休暇・祝日・無給休業などの扱いにより、年間勤務週数の設定が変わります。</li></ul><p>関連ツール：<a href="./overtime.html">残業代計算</a> ／ <a href="./salary.html">年収・手取り計算</a></p></section>
+<section class="panel">
+<h2>計算方法と使い方</h2>
+<p>入力した勤務条件から年間勤務時間を求め、給与を同じ労働時間ベースに換算します。</p>
+<div class="formula">年間勤務時間 ＝ 1日実働時間 × 週勤務日数 × 年間勤務週数<br/>月平均勤務時間 ＝ 年間勤務時間 ÷ 12<br/>時給換算 ＝ （年収 − 年間賞与）÷ 年間勤務時間<br/>月平均給与（賞与除く）＝ 時給換算 × 月平均勤務時間<br/>年収（賞与込み）＝ 時給換算 × 年間勤務時間 ＋ 年間賞与</div>
+<p class="small muted">月給を入力した場合は「月給×12＋賞与」を年収として換算します。年収を入力した場合は「（年収−賞与）÷12」を月平均給与として換算します。</p>
+<div class="note"><strong>ご注意：</strong>本ツールは勤務時間に基づく単純換算です。時給制の有給休暇、祝日・休日の扱い、月給制の有給休暇、固定残業代、時間外・深夜・休日割増、通勤手当、各種手当、税金・社会保険料などは自動計算しません。「時給換算」は残業代算定の法的な基礎時給と必ずしも一致しません。月給制で所定労働時間が決まっている場合は、実際の年間所定労働時間をもとに設定してください。</div>
+</section>
+<section class="panel">
+<h2>よくある質問（FAQ）</h2>
+<details><summary>月給から時給を計算する方法は？</summary><p>月給を12倍した金額を年間勤務時間で割ります。賞与を含む実質的な年収ベースの時給を知りたい場合は、年収に賞与を含めて入力するなど、目的に合わせて比較してください。</p></details>
+<details><summary>年収から時給を計算するとき、ボーナスはどう扱いますか？</summary><p>このツールでは賞与を通常の給与と分けます。年収と年間賞与を入力すると、賞与を除いた給与を勤務時間で割って時給換算します。賞与を含む年収全体の時間当たり金額を知りたい場合は、賞与欄を0円にして比較できます。</p></details>
+<details><summary>時給から月収を計算するには？</summary><p>時給に月平均勤務時間を掛けます。月平均勤務時間は、1日の実働時間×週の勤務日数×年間の勤務週数÷12で求めます。毎月の実際の勤務日数により給与は変動します。</p></details>
+<details><summary>手取り額や残業代も計算できますか？</summary><p>このページの金額は税引前の概算です。手取り額は<a href="./salary.html">年収・手取り計算</a>、割増賃金の概算は<a href="./overtime.html">残業代計算</a>をご利用ください。</p></details>
+<details><summary>年間の勤務週数はどう設定すればいいですか？</summary><p>52週を基準に、無給の休業や勤務しない週を差し引いてください。祝日や有給休暇など、給与が支払われる日をどう扱うかは雇用形態と比較目的によって異なります。年間所定労働時間が分かる場合は、その時間に近くなるよう調整してください。</p></details>
+</section>
+<p><a href="./">← 暮らしの計算ツールトップページに戻る</a></p>
+</main>
+<footer class="site-footer"><div class="site-footer-links"><a href="./about.html">このサイトについて</a><a href="./privacy.html">プライバシーポリシー</a><a href="./contact.html">お問い合わせ</a></div><div>© 2026 暮らしの計算ツール</div></footer>
+<div class="site-info-links" style="max-width:1050px;margin:22px auto 12px;padding:12px 16px;text-align:center;line-height:2;border-top:1px solid #dce5f0;font-size:14px"><a href="./about.html">このサイトについて</a> ｜ <a href="./privacy.html">プライバシーポリシー</a> ｜ <a href="./contact.html">お問い合わせ</a></div>
+<script>
+(function(){
+'use strict';
+const el=id=>document.getElementById(id);
+const money=n=>new Intl.NumberFormat('ja-JP',{style:'currency',currency:'JPY',maximumFractionDigits:0}).format(n);
+const num=n=>new Intl.NumberFormat('ja-JP',{maximumFractionDigits:2}).format(n);
+const defaults={mode:'hourly',pay:'1500',hours:'8',days:'5',weeks:'52',bonus:'0'};
+function updateLabels(){const mode=el('mode').value;const labels={hourly:['時給（円）','税引前の時給を入力してください。'],monthly:['月給（円・賞与除く）','税引前の月給を入力してください。'],annual:['年収（円・賞与込み）','税引前の年収総額を入力してください。']};el('payLabel').textContent=labels[mode][0];el('payHint').textContent=labels[mode][1];}
+function clear(){el('results').hidden=true;el('headline').textContent='';}
+function calculate(){
+ const mode=el('mode').value;const vals={};for(const id of ['pay','hours','days','weeks','bonus']){const raw=el(id).value.trim();if(raw===''){el('error').textContent='すべての項目を入力してください。';clear();return;}vals[id]=Number(raw);if(!Number.isFinite(vals[id])||vals[id]<0){el('error').textContent='0以上の有限な数値を入力してください。';clear();return;}}
+ const {pay,hours,days,weeks,bonus}=vals;
+ if(pay<=0||hours<=0||days<=0||weeks<=0||hours>24||days>7||weeks>52.18){el('error').textContent='給与・実働時間・勤務日数・勤務週数は正の値で入力し、1日24時間以下・週7日以下・年間52.18週以下にしてください。';clear();return;}
+ if(mode==='annual'&&bonus>pay){el('error').textContent='年間賞与は年収以下にしてください。';clear();return;}
+ const yearHours=hours*days*weeks,monthHours=yearHours/12;
+ let hourly,monthly,annual;
+ if(mode==='hourly'){hourly=pay;monthly=hourly*monthHours;annual=hourly*yearHours+bonus;}
+ else if(mode==='monthly'){monthly=pay;hourly=monthly/monthHours;annual=monthly*12+bonus;}
+ else{annual=pay;monthly=(annual-bonus)/12;hourly=(annual-bonus)/yearHours;}
+ if(![hourly,monthly,annual,yearHours,monthHours].every(Number.isFinite)||Math.max(hourly,monthly,annual)>1e15){el('error').textContent='計算結果が大きすぎます。入力値を確認してください。';clear();return;}
+ el('error').textContent='';el('results').hidden=false;
+ el('hourlyResult').textContent=money(hourly);el('monthlyResult').textContent=money(monthly);el('annualResult').textContent=money(annual);el('annualHours').textContent=num(yearHours)+' 時間';el('monthlyHours').textContent=num(monthHours)+' 時間';el('bonusResult').textContent=money(bonus);
+ const labels={hourly:['月平均給与（賞与除く）',monthly],monthly:['換算時給',hourly],annual:['換算時給',hourly]};el('resultDescription').textContent=labels[mode][0]+'の目安';el('headline').textContent=money(labels[mode][1]);
+ el('explanation').textContent='年間勤務時間 '+num(yearHours)+'時間、月平均 '+num(monthHours)+'時間を用いて計算しています。換算時給と月平均給与は賞与を含まない税引前の概算です。年収には賞与を含めます。';
+}
+el('mode').addEventListener('change',()=>{updateLabels();clear();el('error').textContent='';});
+for(const id of ['pay','hours','days','weeks','bonus'])el(id).addEventListener('input',()=>{clear();el('error').textContent='';});
+el('calculate').addEventListener('click',calculate);
+el('reset').addEventListener('click',()=>{for(const [id,value] of Object.entries(defaults))el(id).value=value;updateLabels();calculate();});
+updateLabels();calculate();
+})();
+</script>
+<script id="phase2-comparison-script">
+(()=>{'use strict';const $=id=>document.getElementById(id),yen=n=>Math.round(n).toLocaleString('ja-JP')+' 円',fmt=n=>n.toLocaleString('ja-JP',{maximumFractionDigits:1});$('p2-hourly-run').addEventListener('click',()=>{const mode=$('mode').value,pay=Number($('pay').value),h=Number($('hours').value),w=Number($('weeks').value),b=Number($('bonus').value),error=$('p2-hourly-error'),body=$('p2-hourly-body');body.replaceChildren();if(![pay,h,w,b].every(Number.isFinite)||pay<=0||h<=0||h>24||w<=0||w>52.18||b<0||(mode==='annual'&&b>pay)){error.textContent='給与・勤務時間・勤務週数・賞与の入力を確認してください。';return;}error.textContent='';for(const d of [3,4,5]){const mh=h*d*w/12;const month=mode==='hourly'?pay*mh:mode==='monthly'?pay:(pay-b)/12;const rate=month/mh;const tr=document.createElement('tr');for(const value of [d+'日',fmt(mh)+'時間',yen(month),yen(rate)]){const td=document.createElement('td');td.textContent=value;tr.append(td);}body.append(tr);}});})();
+</script></body>
+</html>

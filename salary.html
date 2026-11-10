@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="ja"><head><meta name="google-adsense-account" content="ca-pub-7493976070389751"><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>年収・手取り計算｜税金・社会保険料を考慮して無料試算 - 暮らしの計算ツール</title><meta content="額面年収から所得税・住民税・社会保険料を考慮した手取り額を無料で概算。年齢や賞与などを入力して試算できます。実際の金額とは異なる場合があります。" name="description"/><link href="./assets/a3.css" rel="stylesheet"/><link href="https://babydragon-zh.github.io/salary.html" rel="canonical"/><style>.dev-note,.dev-test{display:none!important}</style><style>.salary-seo-guide{margin:24px 0}.salary-seo-guide .card{line-height:1.85}.salary-seo-guide h2{margin:24px 0 10px}.salary-seo-guide h2:first-child{margin-top:0}.salary-seo-guide h3{font-size:1.02rem;margin:16px 0 6px}.salary-seo-guide ol{padding-left:1.5em}.salary-seo-guide li{margin:5px 0}.salary-seo-guide a{color:#1769b0;text-decoration:underline}</style><style id="phase2-comparison-style">.phase2-panel{margin:24px 0;padding:clamp(18px,3vw,28px);background:#fff;border:1px solid #d5e5f3;border-radius:18px;box-shadow:0 5px 18px #c3d7e522;color:#183b66;line-height:1.8}.phase2-panel h2{margin:0 0 12px;color:#214e81}.phase2-panel p{margin:8px 0 16px}.phase2-controls{display:flex;flex-wrap:wrap;align-items:end;gap:14px;margin:14px 0}.phase2-controls label{display:grid;gap:5px;min-width:145px;font-weight:600}.phase2-controls input{width:150px;max-width:100%;padding:10px;border:1px solid #c5d9e9;border-radius:9px;font:inherit}.phase2-panel button{padding:10px 18px;background:#2987e6;color:white;border:0;border-radius:10px;font-weight:700;cursor:pointer}.phase2-table-wrap{overflow-x:auto}.phase2-table{width:100%;border-collapse:collapse;min-width:390px;font-size:.94rem}.phase2-table th,.phase2-table td{border-bottom:1px solid #e4edf6;padding:10px;text-align:right}.phase2-table th:first-child,.phase2-table td:first-child{text-align:left}.phase2-table thead{background:#edf7ff}.phase2-muted{font-size:.87rem;color:#627b94}.phase2-error{color:#b02929;font-weight:600}@media(max-width:650px){.phase2-panel{padding:17px}.phase2-controls label{min-width:0;flex:1 1 130px}.phase2-controls input{width:100%}}</style></head><body><header class="site-header"><div class="head-inner"><a class="brand" href="./index.html"><span class="brand-mark">▦</span><span><strong>暮らしの計算ツール</strong><small>暮らしの計算を、もっとシンプルに</small></span></a><nav aria-label="メインナビゲーション" class="nav"><a class="" href="./index.html"><img alt="" aria-hidden="true" class="nav-icon" src="./assets/nav-home.svg"/>ホーム</a><a class="active" href="./salary.html"><img alt="" aria-hidden="true" class="nav-icon" src="./assets/nav-salary.svg"/>年収・手取り</a><a class="" href="./overtime.html"><img alt="" aria-hidden="true" class="nav-icon" src="./assets/nav-overtime.svg"/>残業代</a><a class="" href="./hourly.html"><img alt="" aria-hidden="true" class="nav-icon" src="./assets/nav-hourly.svg"/>時給</a><a class="" href="./mortgage.html"><img alt="" aria-hidden="true" class="nav-icon" src="./assets/nav-mortgage.svg"/>住宅ローン</a><a class="" href="./car.html"><img alt="" aria-hidden="true" class="nav-icon" src="./assets/nav-car.svg"/>車の維持費</a></nav></div></header><main class="wrap"><div class="breadcrumbs"><a href="./index.html">ホーム</a>　›　年収・手取り計算</div><section class="hero calc-hero approved-art-hero approved-art-salary"><div><span class="pill">2026年版・無料シミュレーション</span><h1>年収・手取り計算</h1><p>年収から手取り額を、かんたんにシミュレーション。<br/>税金・社会保険料を考慮した概算がわかります。</p></div></section><div class="calc-grid"><section aria-label="入力フォーム"><div class="card"><h2>基本情報</h2><label for="income">年収（税込・賞与込み、万円）</label><input id="income" max="100000" min="0" type="number" value="500"/><label for="bonus">うち年間賞与（万円）</label><input id="bonus" min="0" type="number" value="100"/><label for="age">年齢</label><input id="age" max="100" min="18" type="number" value="30"/><label for="pref">協会けんぽの都道府県</label><select id="pref"><option value="9.93">愛知県（9.93%）</option><option value="10">その他（下の欄で料率指定）</option></select><label for="health">健康保険料率（労使合計・％、必要に応じ修正）</label><input id="health" max="30" min="0" step="0.01" type="number" value="9.93"/><label for="family">扶養控除対象者（16歳以上、一般扶養のみ）</label><select id="family"><option value="0">0人</option><option value="1">1人</option><option value="2">2人</option><option value="3">3人</option></select><p class="muted">配偶者控除、19～22歳の特定親族、高齢扶養、障害者控除、所得金額調整控除などは未対応。該当する場合は結果がずれます。</p><button id="calc">手取りを概算する</button></div></section><section aria-label="計算結果"><div class="result-placeholder" id="result-placeholder"><span class="placeholder-symbol">🧮</span><b>計算結果（目安）</b><span>左側の情報を入力して「計算する」を押すと、<br/>ここに手取り額が表示されます。</span></div><div class="card" hidden="" id="result"><h2>年間の概算結果</h2><div class="hero">年間手取り（推計）<br/><strong id="take">-</strong></div><div class="grid" style="margin-top:14px"><div class="metric">月平均手取り（賞与込み÷12）<strong id="monthly">-</strong></div><div class="metric">社会保険料（本人負担）<strong id="social">-</strong></div><div class="metric">所得税＋復興特別所得税<strong id="tax">-</strong></div><div class="metric">住民税（2026年所得→2027年度の参考額）<strong id="resident">-</strong></div></div><p class="warning">これは給与明細の再現ではありません。社会保険は入力した年収・賞与から標準報酬月額の等級を推定し、標準賞与額は上限を反映しますが、支給月・等級・端数処理の違いで実際の金額とずれます。住民税は前年所得で決まります。本表示は2026年所得に対する2027年度の参考値であり、2026年中の給与天引き額とは異なります。生命保険料控除・住宅ローン控除・配偶者控除・所得金額調整控除等は未反映です。全国一律の正確な手取り額ではありません。</p><div class="muted" id="details" style="line-height:1.9;margin-top:16px"></div></div></section></div><section class="phase2-panel" aria-labelledby="p2-salary-title"><h2 id="p2-salary-title">年収が変わると、手取りはどのくらい変わる？</h2><p>現在の年齢・扶養人数・健康保険料率を維持して、年収が前後した場合の手取り額を比較できます。転職・昇給を検討するときの参考にしてください。</p><div class="phase2-controls"><label for="p2-salary-step">比較する年収差（万円）<input id="p2-salary-step" type="number" min="1" max="1000" step="1" value="50"/></label><button id="p2-salary-run" type="button">現在の入力で比較する</button></div><p class="phase2-error" id="p2-salary-error" role="alert"></p><div class="phase2-table-wrap"><table class="phase2-table"><thead><tr><th>年収（額面）</th><th>年間手取り（概算）</th><th>月平均手取り</th><th>現状との差</th></tr></thead><tbody id="p2-salary-body"></tbody></table></div><p class="phase2-muted">この比較は既存の「手取りを概算する」と同じ2026年の計算モデルを使用します。賞与額は固定し、年収の増減分は月給部分に反映する仮定です。住民税は2026年所得に基づく翌年度の参考額。実際の給与明細や将来の制度変更を反映するものではありません。</p></section><section aria-label="年収と手取りの計算ガイド" class="salary-seo-guide">
+<div class="card">
+<h2>年収と手取りの違い</h2>
+<p>「年収」は、一般に税金や社会保険料が差し引かれる前の給与収入（額面）を指します。一方、「手取り」は、給与収入から所得税・住民税・社会保険料などを差し引いた後に受け取る金額です。このツールでは、年間賞与を含む額面年収から、年間の手取り額と月平均額を概算します。</p>
+<h2>年収500万円の場合の入力例</h2>
+<ol><li>「年収（税込・賞与込み）」に <strong>500</strong> 万円を入力します。</li><li>年間賞与が100万円なら「うち年間賞与」に <strong>100</strong> 万円を入力します。賞与がなければ0を入力します。</li><li>年齢、健康保険料率、一般扶養控除の対象人数を確認して「手取りを概算する」を押します。</li></ol>
+<p class="muted">これは操作方法の例です。実際の試算額は入力条件によって変わります。月平均手取りは賞与を含む年間手取りを12で割った値であり、毎月の給与振込額とは異なります。</p>
+<h2>試算結果を見るときの注意点</h2>
+<p>この計算機は、協会けんぽの保険料率や給与所得控除などを用いた概算ツールです。2026年分の年税額を想定しており、年内の毎月の源泉徴収税額とは異なります。配偶者控除、住宅ローン控除、生命保険料控除などの個別事情は反映していません。また、住民税は前年所得に基づいて課税されるため、画面に表示する住民税の参考額と現在の給与天引き額は一致しない場合があります。</p>
+<h2>よくある質問</h2>
+<h3>年収にはボーナスも含めますか？</h3><p>はい。このツールの「年収」は年間賞与を含む税込の給与収入です。ボーナスの金額は、年収とは別に「うち年間賞与」にも入力してください。二重に加算されるわけではありません。</p>
+<h3>月平均手取りは毎月の給与と同じですか？</h3><p>いいえ。月平均手取りは年間手取りを12で割った参考値です。賞与支給月や住民税の天引き状況などによって、実際の月々の振込額は変わります。</p>
+<h3>計算結果は給与明細と一致しますか？</h3><p>必ずしも一致しません。標準報酬月額、保険料率、各種控除、端数処理、住民税の課税年度などによって差が生じます。正確な金額は勤務先の給与明細や公的資料で確認してください。</p>
+<h3>入力した年収などの情報は送信されますか？</h3><p>この計算機の試算処理はブラウザ内で実行されます。計算のために入力値をサーバーへ送信する仕組みは設けていません。サイトのアクセスや外部サービスに関する取扱いは、<a href="./privacy.html">プライバシーポリシー</a>をご確認ください。</p>
+<h2>関連する計算ツール</h2><p>給与についてさらに調べたい場合は、<a href="./overtime.html">残業代計算</a>や<a href="./hourly.html">時給計算</a>もご利用ください。</p>
+</div></section><section class="calc-notes"><div class="card"><h2>計算方法・出典</h2><p>所得税は2026年分の給与所得控除・基礎控除、累進税率および復興特別所得税2.1%を使用。健康保険は入力した労使合計料率の半額、厚生年金は本人負担9.15%、雇用保険は一般事業の本人負担0.5%で近似します。賞与は年2回に均等支給される想定です。40～64歳は介護保険1.62%の半額、2026年度の子ども・子育て支援金0.23%の半額は2026年4～12月の9か月分と、賞与が6月・12月に支払われる仮定で計算します。</p><p>住民税は2026年所得に対する2027年度の参考額です。非課税判定は安城市公表の基準に基づく簡易判定で、障害者・寡婦・配偶者・16歳未満の扶養親族等は反映しません。基礎控除43万円、一般扶養控除33万円、所得割10%、愛知県安城市を例とした均等割等5,500円（森林環境税を含む）を使用します。調整控除は簡易式で反映します。非課税判定は扶養人数のみの簡易モデルであり、自治体ごとの差・住宅ローン控除等には未対応です。</p><p class="muted">公式資料：<a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1410.htm" rel="noopener" target="_blank">国税庁 給与所得控除</a> / <a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1199.htm" rel="noopener" target="_blank">基礎控除</a> / <a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2260.htm" rel="noopener" target="_blank">所得税率</a> / <a href="https://www.kyoukaikenpo.or.jp/about/business/insurance_rate/rate_prefectures/r08/" rel="noopener" target="_blank">協会けんぽ 2026年度料率</a> / <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000108634.html" rel="noopener" target="_blank">雇用保険料率</a> / <a href="https://www.city.anjo.aichi.jp/kurasu/zeikin/shiminzei/kojinshiminzei/zeigakukeisan.html" rel="noopener" target="_blank">安城市 住民税の税額計算</a> / <a href="https://www.kyoukaikenpo.or.jp/about/business/insurance_rate/003/index.html" rel="noopener" target="_blank">協会けんぽ 支援金</a></p><p class="muted">更新：2026年10月（令和8年分の制度を参照）。概算用の計算ツールです。税務・給与計算上の判断には使用せず、勤務先や専門家の資料をご確認ください。</p></div></section></main><footer class="footer"><div><a href="./about.html">このサイトについて</a><a href="./privacy.html">プライバシーポリシー</a><a href="./contact.html">お問い合わせ</a></div><p>© 2026 暮らしの計算ツール</p></footer><script>
+const $=id=>document.getElementById(id),yen=n=>Math.round(n).toLocaleString('ja-JP')+' 円';
+$('pref').addEventListener('change',()=>{$('health').value=$('pref').value});
+function salaryDeduction(y){if(y<=2200000)return Math.min(y,740000);if(y<=3600000)return y*.3+80000;if(y<=6600000)return y*.2+440000;if(y<=8500000)return y*.1+1100000;return 1950000}
+function basic(y){if(y<=4890000)return 1040000;if(y<=6550000)return 670000;if(y<=23500000)return 620000;if(y<=24000000)return 480000;if(y<=24500000)return 320000;if(y<=25000000)return 160000;return 0}
+function nationalTax(t){t=Math.floor(Math.max(0,t)/1000)*1000;let r=0,d=0;if(t<1950000){r=.05}else if(t<3300000){r=.1;d=97500}else if(t<6950000){r=.2;d=427500}else if(t<9000000){r=.23;d=636000}else if(t<18000000){r=.33;d=1536000}else if(t<40000000){r=.4;d=2796000}else{r=.45;d=4796000}return Math.max(0,t*r-d)*1.021}
+// 協会けんぽ・厚生年金の標準報酬月額の代表的な等級（概算）
+const grades=[58000,68000,78000,88000,98000,104000,110000,118000,126000,134000,142000,150000,160000,170000,180000,190000,200000,220000,240000,260000,280000,300000,320000,340000,360000,380000,410000,440000,470000,500000,530000,560000,590000,620000,650000,680000,710000,750000,790000,830000,880000,930000,980000,1030000,1090000,1150000,1210000,1270000,1330000,1390000];
+function gradeFor(monthly, pension){
+  // 等級表の報酬月額区分（下限以上・上限未満）を使用。
+  // 隣接等級の中点が区分境界となる（例：93,000円から98,000円等級）。
+  const allowed=grades.filter(g=>pension?(g>=88000&&g<=650000):(g>=58000&&g<=1390000));
+  for(let i=0;i<allowed.length-1;i++){
+    const boundary=(allowed[i]+allowed[i+1])/2;
+    if(monthly<boundary)return allowed[i];
+  }
+  return allowed[allowed.length-1];
+}
+function estimate(input){
+  const {y,b,age,rate,f}=input;
+  // 令和8・9年分：給与収入219.1万～220万円未満の特例（国税庁No.1410）。
+  let salary=Math.max(0,y-salaryDeduction(y));
+  if(y>=2191000&&y<2193000)salary=1451000;
+  else if(y>=2193000&&y<2196000)salary=1453000;
+  else if(y>=2196000&&y<2200000)salary=1456000;
+  const base=basic(salary);
+  const monthly=(y-b)/12;
+  const healthGrade=gradeFor(monthly,false),pensionGrade=gradeFor(monthly,true);
+  const careRate=age>=40&&age<=64?.0162:0;
+  const bonusEach=b/2;
+  const healthBonus=Math.min(5730000,Math.floor(b/1000)*1000);
+  const pensionBonus=2*Math.min(1500000,Math.floor(bonusEach/1000)*1000);
+  const healthBase=healthGrade*12+healthBonus;
+  const pensionBase=pensionGrade*12+pensionBonus;
+  const healthInsurance=healthBase*rate/100/2;
+  const careInsurance=healthBase*careRate/2;
+  // 2026年4月開始。年額は制度開始後の料率を12か月適用した比較用の年換算概算。
+  const childSupport=(healthGrade*9+healthBonus)*.0023/2;
+  const pensionInsurance=pensionBase*.0915;
+  const unemployment=y*.005;
+  const social=healthInsurance+careInsurance+childSupport+pensionInsurance+unemployment;
+  const taxable=Math.max(0,salary-social-base-f*380000);
+  const tax=Math.floor(nationalTax(taxable));
+  const residentTaxable=Math.max(0,Math.floor((salary-social-430000-f*330000)/1000)*1000);
+  // 安城市公表の非課税基準（扶養人数は入力した一般扶養のみの簡易モデル）
+  const residentIncomeExempt = salary <= (f===0?450000:350000*(f+1)+420000);
+  const residentFlatExempt = salary <= (f===0?420000:320000*(f+1)+289000);
+  // 安城市モデル: 均等割4,500円＋森林環境税1,000円。調整控除の最低額2,500円（一般扶養人数による差額は簡易処理）
+  const personalDiff=50000+f*50000; // 基礎控除の人的控除差5万円、一般扶養差5万円/人
+  const adjust=residentTaxable<=2000000?Math.max(2500,Math.min(personalDiff,residentTaxable)*.05):Math.max(2500,(personalDiff-(residentTaxable-2000000))*.05);
+  const residentIncomePart=residentIncomeExempt?0:Math.max(0,Math.floor((residentTaxable*.1-adjust)/100)*100);
+  const residentFlatPart=residentFlatExempt?0:5500;
+  const resident=residentIncomePart+residentFlatPart;
+  return {y,b,salary,base,healthGrade,pensionGrade,healthInsurance,careInsurance,childSupport,pensionInsurance,unemployment,social,taxable,tax,residentTaxable,residentAdjust:residentIncomeExempt?0:adjust,residentIncomePart,residentFlatPart,resident,take:y-social-tax-resident};
+}
+$('calc').addEventListener('click',()=>{
+  const man=Number($('income').value),b=Number($('bonus').value),age=Number($('age').value),rate=Number($('health').value),f=Number($('family').value);
+  if(!$('income').value.trim()||!$('bonus').value.trim()||!$('age').value.trim()||!$('health').value.trim()||!Number.isFinite(man)||man<=0||man>100000||!Number.isFinite(b)||b<0||b>man||!Number.isFinite(age)||!Number.isInteger(age)||age<18||age>100||!Number.isFinite(rate)||rate<0||rate>30||!Number.isInteger(f)||f<0||f>3){alert('年収・賞与・年齢・健康保険料率を確認してください。');return}
+  const r=estimate({y:man*10000,b:b*10000,age,rate,f});
+  $('take').textContent=yen(r.take);
+  $('monthly').textContent=yen(r.take/12);
+  $('social').textContent=yen(r.social);
+  $('tax').textContent=yen(r.tax);
+  $('resident').textContent=yen(r.resident);
+  $('details').innerHTML='<h3>計算の内訳（概算）</h3>'+[
+    ['給与収入',r.y],['給与所得控除（特例・端数調整を含む）',r.y-r.salary],['給与所得',r.salary],
+    ['所得税の基礎控除',r.base],['健康保険（本人負担）',r.healthInsurance],['介護保険（40～64歳）',r.careInsurance],['子ども・子育て支援金（4～12月＋賞与2回の仮定）',r.childSupport],
+    ['厚生年金',r.pensionInsurance],['雇用保険',r.unemployment],
+    ['所得税の課税所得（千円未満切捨て前）',r.taxable],
+    ['住民税の課税所得（簡易）',r.residentTaxable],['住民税・調整控除（簡易）',r.residentAdjust],['住民税・所得割（簡易）',r.residentIncomePart],['住民税・均等割＋森林環境税（安城市例）',r.residentFlatPart]
+  ].map(([name,val])=>'<div style="display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid #e7edf5;padding:6px 0"><span>'+name+'</span><b>'+yen(val)+'</b></div>').join('')+
+  '<p>標準報酬月額の概算：健康保険 '+yen(r.healthGrade)+' ／ 厚生年金 '+yen(r.pensionGrade)+'。賞与は年2回均等支給と仮定。子ども・子育て支援金は2026年4～12月の9か月分と、賞与が6月・12月に各半額支給される仮定です。住民税は2026年所得に対する2027年度の参考額です。非課税判定は安城市公表の基準に基づく簡易判定で、障害者・寡婦・配偶者・16歳未満の扶養親族等は反映しません。</p>';
+  $('result').hidden=false;$('result').scrollIntoView({behavior:'smooth'});
+});
+</script><script>document.getElementById("calc").addEventListener("click",()=>{if(!document.getElementById("result").hidden)document.getElementById("result-placeholder").hidden=true});</script><script id="phase2-comparison-script">
+(()=>{'use strict';const $=id=>document.getElementById(id),yen=n=>Math.round(n).toLocaleString('ja-JP')+' 円';$('p2-salary-run').addEventListener('click',()=>{const man=Number($('income').value),bonus=Number($('bonus').value),age=Number($('age').value),rate=Number($('health').value),f=Number($('family').value),step=Number($('p2-salary-step').value),body=$('p2-salary-body'),error=$('p2-salary-error');body.replaceChildren();if(![man,bonus,age,rate,f,step].every(Number.isFinite)||man<=0||man>100000||bonus<0||bonus>man||!Number.isInteger(age)||age<18||age>100||rate<0||rate>30||!Number.isInteger(f)||f<0||f>3||!Number.isInteger(step)||step<1||step>1000){error.textContent='年収・賞与・年齢・保険料率・比較幅を確認してください。';return;}error.textContent='';const current=estimate({y:man*10000,b:bonus*10000,age,rate,f});for(const yman of [man-step,man,man+step]){if(yman<=0||yman<bonus)continue;const r=estimate({y:yman*10000,b:bonus*10000,age,rate,f});const tr=document.createElement('tr');for(const value of [yman.toLocaleString('ja-JP')+'万円',yen(r.take),yen(r.take/12),(r.take-current.take>=0?'+':'−')+yen(Math.abs(r.take-current.take))]){const td=document.createElement('td');td.textContent=value;tr.append(td);}if(yman===man)tr.style.background='#f0f8ff';body.append(tr);}if(!body.children.length)error.textContent='比較できる年収条件がありません。';});})();
+</script></body></html>

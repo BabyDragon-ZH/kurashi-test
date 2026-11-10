@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head><meta name="google-adsense-account" content="ca-pub-7493976070389751">
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="住宅ローンの毎月の返済額や総返済額を無料でシミュレーション。借入額・金利・返済期間から目安を確認できます。" name="description"/>
+<meta content="index,follow" name="robots"/><link href="https://babydragon-zh.github.io/mortgage.html" rel="canonical"/>
+<title>住宅ローン返済シミュレーション｜毎月の返済額を試算 - 暮らしの計算ツール</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;color:#172b47;background:#f3f6fb}*{box-sizing:border-box}body{margin:0;line-height:1.65}a{color:#135ca5}header{background:#173f70;color:white}header .wrap{max-width:1050px;margin:auto;padding:16px 18px;font-weight:750}header a{color:white;text-decoration:none}nav{background:#e7eff9;border-bottom:1px solid #ccd9e8}nav .wrap{max-width:1050px;margin:auto;padding:11px 18px;display:flex;flex-wrap:wrap;gap:12px 22px}nav a{font-weight:650}nav a[aria-current="page"]{color:#173f70;text-decoration:none}main{max-width:1050px;margin:28px auto;padding:0 16px}h1{font-size:clamp(1.5rem,3.5vw,2.1rem);margin:0 0 10px;line-height:1.4}h2{font-size:1.24rem;margin:0 0 14px}h3{font-size:1.06rem;margin:18px 0 8px}p{margin:8px 0 14px}.muted,.hint{color:#53677e}.small,.hint{font-size:.88rem}.pill{display:inline-block;background:#e6effa;color:#225080;border-radius:25px;padding:3px 12px;font-size:.8rem;margin-bottom:10px}.panel{background:white;border:1px solid #dce5f0;border-radius:14px;padding:24px;margin:20px 0;box-shadow:0 3px 15px #16385e0b}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.field label{display:block;font-weight:700;margin-bottom:5px}.field input,.field select{display:block;width:100%;border:1px solid #95aac3;border-radius:8px;padding:11px 12px;font:inherit;background:white;color:inherit}.hint{margin:4px 0 0}.note{background:#fff7e7;border-left:4px solid #c78d26;padding:12px 15px;border-radius:5px}.info{background:#eff6ff;border-left:4px solid #3578bf;padding:12px 15px;border-radius:5px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}button{font:inherit;font-weight:700;border:0;border-radius:9px;background:#1267b4;color:white;padding:12px 22px;cursor:pointer}button.secondary{background:#e5eef8;color:#21466e}button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #f0a629;outline-offset:2px}.error{color:#ae201c;font-weight:700}.error:empty{display:none}.results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.metric{background:#eff5fd;border-radius:10px;padding:16px}.metric strong{display:block;font-size:clamp(1.2rem,3vw,1.7rem);color:#135aa1;overflow-wrap:anywhere}.metric .sub{display:block;font-size:.8rem;color:#53677e}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:540px}th,td{padding:10px;border-bottom:1px solid #e2e9f1;text-align:right;font-variant-numeric:tabular-nums}th:first-child,td:first-child{text-align:left}th{background:#eff5fb}details{border-bottom:1px solid #e1e8f1;padding:12px 0}summary{cursor:pointer;font-weight:700}footer{text-align:center;padding:25px;color:#60748a}#result[hidden]{display:none}#chart{display:block;width:100%;max-width:750px;height:auto;margin:12px auto}#chart text{font-size:13px;fill:#53677e}#chart .principal{fill:#347dc2}#chart .interest{fill:#f1ae4e}#chart .gridline{stroke:#e3eaf3;stroke-width:1}.legend{display:flex;gap:18px;justify-content:center;flex-wrap:wrap}.legend i{display:inline-block;width:12px;height:12px;margin-right:5px;border-radius:2px}.nowrap{white-space:nowrap}@media(max-width:650px){main{margin:18px auto}.panel{padding:17px}.grid,.results{grid-template-columns:1fr}nav .wrap{gap:8px 15px}.metric strong{font-size:1.5rem}}
+</style>
+<style>
+/* 2026 site-wide visual refresh: styles only, calculator JS untouched */
+:root{--ui-ink:#17365e;--ui-blue:#2787e8;--ui-border:#e0eaf5;--ui-sky:#edf7ff;--ui-shadow:0 10px 30px rgba(43,99,153,.075)}
+html{scroll-behavior:smooth}body{background:linear-gradient(180deg,#f0f8ff 0,#f8fbff 460px,#f8fbff 100%)!important;color:var(--ui-ink)!important;font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif!important;line-height:1.65}*{box-sizing:border-box}
+.site-top{background:rgba(255,255,255,.97)!important;border-bottom:1px solid #e1edf8!important;padding:0!important;color:var(--ui-ink)!important;box-shadow:0 3px 16px rgba(33,98,158,.04)}
+.site-top .site-top-inner{max-width:1180px;margin:auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.site-brand{display:flex;align-items:center;gap:10px;text-decoration:none!important;color:#17518c!important;font-size:1.18rem;font-weight:800;line-height:1.25}.brand-mark{display:grid;place-items:center;width:39px;height:39px;border-radius:11px;background:linear-gradient(145deg,#4b9ded,#2175d6);color:white;font-size:23px;box-shadow:0 5px 12px #448bd42b}.brand-sub{display:block;font-size:.67rem;color:#7d91a9;font-weight:500;margin-top:2px}
+.site-nav{background:#fff!important;border-bottom:1px solid #e5edf6!important;padding:0!important;text-align:left!important}.site-nav-inner{max-width:1180px;margin:auto;padding:8px 18px;display:flex;gap:5px;align-items:center;flex-wrap:wrap;justify-content:center}.site-nav a{display:inline-flex;align-items:center;gap:5px;padding:9px 12px!important;border-radius:10px;color:#526d8b!important;text-decoration:none!important;font-size:.88rem;font-weight:700;white-space:nowrap}.site-nav a:hover,.site-nav a[aria-current="page"]{background:#eaf4ff;color:#1874d0!important}.nav-emoji{font-size:1.1rem;line-height:1}
+main{max-width:1120px!important;margin:24px auto 40px!important;padding:0 18px!important}
+.ui-hero{position:relative;overflow:hidden;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(245px,.8fr);align-items:center;gap:16px;background:linear-gradient(115deg,#f5fbff,#e8f5ff 70%,#e9f7f1);border:1px solid #dcecf8;border-radius:24px;padding:26px 32px 12px;margin:0 0 22px;box-shadow:var(--ui-shadow)}
+.ui-hero:before{content:"";position:absolute;width:250px;height:250px;border-radius:50%;background:#ffffff70;right:-65px;top:-130px}.ui-hero h1{font-size:clamp(1.65rem,3.3vw,2.55rem)!important;color:#143b70!important;letter-spacing:.01em;line-height:1.4;margin:7px 0 10px!important}.ui-hero p{font-size:.98rem!important;color:#55728f!important;line-height:1.85;margin:0 0 14px}.ui-eyebrow{display:inline-block;background:#fff;color:#3380c8;font-weight:750;font-size:.78rem;padding:5px 12px;border-radius:99px;box-shadow:0 3px 10px #438ac91c}.ui-art{width:100%;max-width:390px;justify-self:center;position:relative;z-index:1}.ui-art svg{width:100%;height:auto;display:block;filter:drop-shadow(0 7px 10px #6da5cf14)}
+.ui-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:0 0 24px}.ui-link{display:flex;align-items:center;gap:15px;text-decoration:none!important;background:white;border:1px solid #e2ecf7;border-radius:17px;padding:16px 18px;box-shadow:var(--ui-shadow);color:#1c4775!important;transition:transform .18s,box-shadow .18s}.ui-link:hover{transform:translateY(-3px);box-shadow:0 14px 26px #4d87c01c}.ui-link .ui-link-icon{width:53px;height:53px;border-radius:15px;background:#eaf5ff;display:grid;place-items:center;font-size:1.9rem;flex-shrink:0}.ui-link strong{display:block;font-size:1.05rem}.ui-link small{display:block;color:#748ca4;font-size:.8rem;margin-top:3px}.ui-link .ui-arrow{margin-left:auto;color:#2787e8;font-size:1.4rem}
+.ui-section-label{margin:28px 0 13px;font-size:1.22rem;color:#204f81}.ui-divider{border:0;border-top:1px solid #e3edf8;margin:22px 0}
+main .card,main .panel,main section.panel,main #result,main #results{border:1px solid var(--ui-border)!important;border-radius:18px!important;box-shadow:var(--ui-shadow)!important;background:#fff!important}main .card,main .panel{padding:clamp(17px,2.8vw,26px)!important}main h2{color:#214e81!important}main input,main select,main textarea{border:1px solid #cbdced!important;border-radius:9px!important;max-width:100%}main input:focus,main select:focus{outline:2px solid #65a8ed!important;outline-offset:1px}main button,main button[type="submit"]{border-radius:11px!important;background:#2987e6!important;color:white!important;box-shadow:0 4px 10px #2d80cf20}main button.secondary,main button[type="reset"]{background:#e9f3fd!important;color:#205789!important}main .hero{background:#eef7ff!important;border-radius:14px!important}main .metric,main .total-box,main .highlight{border-radius:13px!important}main .pill{background:#e9f5ff!important;color:#2776bd!important}main .info,main .warning{border-radius:11px!important}
+.site-footer{margin-top:30px;background:#fff!important;border-top:1px solid #e1edf8!important;text-align:center!important;padding:27px 18px!important;color:#71859a!important;font-size:.87rem}.site-footer a{color:#437aaa!important;text-decoration:none}.site-footer a:hover{text-decoration:underline}.site-footer-links{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 20px;margin-bottom:10px}
+@media(max-width:720px){.site-top .site-top-inner{padding:10px 15px;justify-content:center}.site-nav-inner{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;padding:8px 12px;-webkit-overflow-scrolling:touch}.site-nav a{font-size:.79rem;padding:8px 10px!important}.ui-hero{grid-template-columns:1fr;padding:20px 20px 4px;gap:0}.ui-hero h1{font-size:1.72rem!important}.ui-art{max-width:285px}.ui-links{grid-template-columns:1fr;gap:10px}.ui-link{padding:13px 15px}main{margin-top:16px!important;padding:0 13px!important}main .card,main .panel{padding:17px!important}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ui-link{transition:none}}
+</style><style>
+/* Shared A3 illustration system, scoped to prevent calculator style regressions */
+body{background:#edf7ff!important;color:#14366c}
+.site-header{position:relative!important;background:#fff!important;color:#12366d!important;border-bottom:1px solid #d7eafa!important;box-shadow:0 2px 15px #c9e1f144!important}
+.site-header .head-inner{max-width:1440px;margin:auto;padding:12px 28px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.site-header .brand{display:flex;align-items:center;gap:12px;color:#12366d!important;text-decoration:none!important;font-weight:700}
+.site-header .brand-mark{width:47px;height:47px;background:#268bf2;border-radius:12px;display:grid;place-items:center;color:white;font-size:26px;box-shadow:0 4px 0 #c0ddfa}
+.site-header .brand strong{display:block;font-size:20px;line-height:1.3}.site-header .brand small{display:block;color:#6680a4;font-size:11px;font-weight:400}
+.site-header .nav{display:flex;align-items:center;flex-wrap:wrap;gap:4px;background:transparent!important;border:0!important;padding:0!important}
+.site-header .nav a{display:inline-flex;align-items:center;gap:6px;padding:10px 12px;border-radius:12px;color:#174679!important;font-weight:700;font-size:13px;text-decoration:none!important}
+.site-header .nav a.active,.site-header .nav a:hover{background:#e7f3ff!important;color:#0879e8!important}
+.site-header .nav-icon{display:block;width:19px;height:19px;flex-shrink:0}
+main{max-width:1300px!important;margin:20px auto!important}
+main>.ui-hero.a3-banner{background:#e2f5ff var(--a3-banner) center center/cover no-repeat!important;min-height:260px!important;display:flex!important;align-items:center!important;padding:34px 43px!important;border-radius:22px!important;box-shadow:0 8px 26px #a3c9e733!important;border:1px solid #fff!important;position:relative!important;overflow:hidden!important;isolation:isolate}
+main>.ui-hero.a3-banner>div:first-child{width:53%!important;max-width:600px!important;position:relative!important;z-index:1!important}
+main>.ui-hero.a3-banner .ui-eyebrow{background:#fffffff0!important;color:#127be5!important;border:1px solid #c7e5ff!important;border-radius:99px!important;padding:7px 15px!important;display:inline-block!important;font-weight:700!important;font-size:13px!important}
+main>.ui-hero.a3-banner h1{color:#0c316b!important;font-size:clamp(26px,3.2vw,43px)!important;line-height:1.24!important;margin:15px 0!important}
+main>.ui-hero.a3-banner p{color:#184474!important;font-size:15px!important;line-height:1.8!important;max-width:560px!important}
+main>.ui-hero.a3-banner .ui-art{display:none!important}
+@media(max-width:760px){.site-header .head-inner{padding:12px 15px}.site-header .nav{width:100%;overflow-x:auto;flex-wrap:nowrap;white-space:nowrap}.site-header .nav a{padding:8px}.site-header .brand strong{font-size:18px}main>.ui-hero.a3-banner{min-height:300px!important;align-items:flex-start!important;padding:22px!important;background-position:67% center!important}main>.ui-hero.a3-banner>div:first-child{width:88%!important}main>.ui-hero.a3-banner h1{font-size:28px!important}main>.ui-hero.a3-banner p{font-size:12px!important;max-width:76%!important}}
+</style><style id="mobile-banner-readability">
+/* Mobile banner layout: identical to the approved home and salary pages. */
+@media (max-width:650px){
+ main>.ui-hero.a3-banner{display:flex!important;flex-direction:column!important;align-items:stretch!important;justify-content:flex-start!important;min-height:0!important;padding:20px 18px 0!important;background-image:none!important;background-color:#eaf7ff!important;overflow:hidden!important;gap:0!important}
+ main>.ui-hero.a3-banner>div:first-child{width:100%!important;max-width:100%!important;flex:none!important;position:relative!important;z-index:2!important}
+ main>.ui-hero.a3-banner h1{font-size:clamp(25px,7vw,30px)!important;line-height:1.3!important;margin:12px 0!important}
+ main>.ui-hero.a3-banner p{max-width:100%!important;font-size:13px!important;line-height:1.65!important;margin:0!important}
+ main>.ui-hero.a3-banner::before{content:''!important;display:block!important;position:relative!important;inset:auto!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;border-radius:0!important;width:calc(100% + 36px)!important;height:auto!important;aspect-ratio:4.5/1!important;flex-shrink:0!important;margin:12px -18px 0!important;background:var(--a3-banner) center center/100% 100% no-repeat!important;opacity:1!important;transform:none!important;pointer-events:none!important;z-index:0!important}
+ main>.ui-hero.a3-banner::after{display:none!important;content:none!important}
+}
+</style></head>
+<body>
+<header class="site-header"><div class="head-inner"><a class="brand" href="./index.html"><span class="brand-mark">▦</span><span><strong>暮らしの計算ツール</strong><small>暮らしの計算を、もっとシンプルに</small></span></a><nav aria-label="メインナビゲーション" class="nav"><a class="" href="./index.html"><img alt="" aria-hidden="true" class="nav-icon" src="./assets/nav-home.svg"/>ホーム</a><a class="" href="./salary.html"><img alt="" aria-hidden="true" class="nav-icon" src="./assets/nav-salary.svg"/>年収・手取り</a><a class="" href="./overtime.html"><img alt="" aria-hidden="true" class="nav-icon" src="./assets/nav-overtime.svg"/>残業代</a><a class="" href="./hourly.html"><img alt="" aria-hidden="true" class="nav-icon" src="./assets/nav-hourly.svg"/>時給</a><a class="active" href="./mortgage.html"><img alt="" aria-hidden="true" class="nav-icon" src="./assets/nav-mortgage.svg"/>住宅ローン</a><a class="" href="./car.html"><img alt="" aria-hidden="true" class="nav-icon" src="./assets/nav-car.svg"/>車の維持費</a></nav></div></header>
+<main><section aria-label="ページの紹介" class="ui-hero a3-banner" style="--a3-banner:url('./assets/banner-mortgage.webp')"><div><span class="ui-eyebrow">無料・登録不要  |  暮らしの計算ツール</span><h1>住宅ローン返済シミュレーション</h1><p class="muted">毎月の返済額や総返済額をシミュレーション。 借入額・金利・返済期間から返済の目安を計算できます。</p></div></section>
+<span class="pill">無料・登録不要・入力内容のサーバーへの送信なし</span>
+<div class="info small">この計算機は<strong>借入期間中ずっと同じ金利</strong>を適用する概算です。変動金利の将来の変化、5年ルール・125%ルール、住宅ローン控除、団体信用生命保険料などは自動計算しません。</div>
+<form id="loanForm" novalidate="">
+<section class="panel"><h2>① 借入条件を入力</h2>
+<div class="grid">
+<div class="field"><label for="price">物件価格（万円）</label><input id="price" inputmode="decimal" max="100000" min="0" required="" step="any" type="number" value="4500"/><p class="hint">土地・建物の購入価格。諸費用は含めません。</p></div>
+<div class="field"><label for="down">頭金（万円）</label><input id="down" inputmode="decimal" max="100000" min="0" required="" step="any" type="number" value="500"/><p class="hint">物件価格から差し引く自己資金。</p></div>
+<div class="field"><label for="rate">年利（％）</label><input id="rate" inputmode="decimal" max="30" min="0" required="" step="any" type="number" value="1.0"/><p class="hint">例：年1.0%なら「1.0」。固定金利として試算。</p></div>
+<div class="field"><label for="years">返済期間（年）</label><input id="years" inputmode="numeric" max="50" min="1" required="" step="1" type="number" value="35"/><p class="hint">1〜50年、1年単位。</p></div>
+<div class="field"><label for="method">返済方式</label><select id="method"><option value="equal">元利均等返済（毎月の返済額がほぼ一定）</option><option value="principal">元金均等返済（毎月の返済額が徐々に減少）</option></select></div>
+<div class="field"><label for="cost">別途必要な諸費用（万円）</label><input id="cost" inputmode="decimal" max="100000" min="0" required="" step="any" type="number" value="200"/><p class="hint">登記費用・仲介手数料等の概算。借入には含めず、自己資金の目安に加算します。</p></div>
+</div>
+<div class="actions"><button type="submit">返済額を計算する</button><button class="secondary" id="reset" type="button">初期値に戻す</button></div>
+<p aria-live="assertive" class="error" id="error" role="alert"></p>
+</section></form>
+<section aria-labelledby="resultTitle" class="panel" hidden="" id="result"><h2 id="resultTitle">② シミュレーション結果</h2>
+<div class="results"><div class="metric">借入金額<strong id="borrow">—</strong></div><div class="metric">毎月の返済額<strong id="payment">—</strong><span class="sub" id="paymentHint"></span></div><div class="metric">ローン総返済額<strong id="total">—</strong></div><div class="metric">支払利息の合計<strong id="interest">—</strong></div><div class="metric">頭金＋諸費用（自己資金）<strong id="cash">—</strong></div><div class="metric">総支出（頭金・諸費用込み）<strong id="overall">—</strong></div></div>
+<p class="small muted">各月の計算は小数を保持し、表示時に1円単位で四捨五入しています。実際の金融機関の端数処理・返済日によって差が生じます。</p>
+<h3>返済内訳の推移</h3><svg aria-label="年ごとの元金返済と利息の積み上げ棒グラフ" id="chart" role="img" viewbox="0 0 750 270"></svg><div class="legend small"><span><i style="background:#347dc2"></i>元金返済</span><span><i style="background:#f1ae4e"></i>利息</span></div>
+<h3>年ごとの返済予定表</h3><div class="table-wrap"><table><thead><tr><th>年</th><th>年間返済額</th><th>うち元金</th><th>うち利息</th><th>年末残高</th></tr></thead><tbody id="schedule"></tbody></table></div>
+<h3>金利が変わった場合の比較</h3><p class="small muted">借入開始時から全期間にわたって比較金利が適用された場合の試算です。返済途中で金利が上がる場合の予測ではありません。</p>
+<div class="table-wrap"><table><thead><tr><th>年利</th><th>初月返済額</th><th>総利息</th><th>総返済額</th></tr></thead><tbody id="comparison"></tbody></table></div>
+<h3>返済期間を変えた場合の比較</h3><p class="small muted">借入額・金利・返済方式を固定し、返済期間だけを変更した場合の概算です。期間を短くすると一般に毎月の負担は増えますが、総利息は減ります。期間は1〜50年の範囲で比較します。</p><div class="table-wrap"><table><thead><tr><th>返済期間</th><th>初月返済額</th><th>総利息</th><th>ローン総返済額</th></tr></thead><tbody id="termComparison"></tbody></table></div><p class="small muted" id="termComparisonNote" aria-live="polite"></p>
+</section>
+<section class="panel seo-guide"><h2>住宅ローンの入力例：3,000万円を35年で借りる場合</h2><p>借入額3,000万円、返済期間35年、年利1.0％、ボーナス返済なしを想定すると、元利均等返済の毎月返済額は<strong>約8.5万円</strong>です。これは金利が全期間変わらず、諸費用などを借入に含めない場合の概算例です。</p><p>物件価格と頭金から借入額を決める場合は、物件価格・頭金・金利・返済期間をそれぞれ入力してください。諸費用はローン返済とは別に必要な自己資金として確認しましょう。</p><h2>毎月の返済額以外に確認したい費用</h2><ul><li>購入時の事務手数料・登記費用などの諸費用</li><li>購入後の固定資産税、火災保険料、修繕・管理費</li><li>変動金利の場合の金利上昇リスクと家計の余裕</li></ul><p>このページの試算は返済額の比較用です。金融機関の実際の返済予定表や審査結果とは異なる場合があります。</p><p>関連ツール：<a href="./salary.html">年収・手取り計算</a> ／ <a href="./car.html">車の維持費計算</a></p></section>
+<section class="panel"><h2>計算方法と前提</h2>
+<p><strong>借入金額</strong>＝物件価格−頭金。諸費用はローンに組み込まず、自己資金として扱います。返済回数は「返済期間×12」、月利は「年利÷12」とします。ボーナス返済、繰上返済、手数料の借入、金利変更は扱いません。</p>
+<p><strong>元利均等返済：</strong>毎月返済額＝借入金額×月利÷(1−(1＋月利)<sup>−返済回数</sup>)。年利0%の場合は借入金額÷返済回数。月々の元金と利息の内訳は変わりますが、返済額は原則一定です。</p>
+<p><strong>元金均等返済：</strong>毎月の元金返済額＝借入金額÷返済回数。各月の利息＝返済直前の残高×月利。返済額は当初が高く、残高の減少に伴って低くなります。</p>
+<div class="note small"><strong>注意：</strong>実際の住宅ローンには金融機関の審査、保証料、事務手数料、団信、火災保険、固定資産税などが関係します。変動金利は将来の返済額が変わる可能性があります。購入可能額や契約条件を保証するものではありません。</div>
+</section>
+<section class="panel"><h2>よくある質問</h2>
+<details><summary>元利均等と元金均等はどちらが有利ですか？</summary><p>同じ借入金額・金利・期間なら、一般に元金均等返済は初期の返済額が高い一方、元金の減りが早いため総利息が少なくなります。毎月の負担の安定性を重視する場合は元利均等返済が選ばれやすい方式です。</p></details>
+<details><summary>変動金利のローンも計算できますか？</summary><p>現在入力した金利が返済終了まで続くと仮定した概算は可能です。ただし、実際の変動金利の見直しや返済額変更のルールは金融機関によって異なるため、将来の返済額を予測するものではありません。</p></details>
+<details><summary>住宅ローン控除は反映されていますか？</summary><p>いいえ。住宅ローン控除は入居年、住宅の性能、所得、借入限度額などに左右されるため、この計算には含めていません。</p></details>
+<details><summary>諸費用をローンに含めたい場合は？</summary><p>この計算機では諸費用を借入に含めません。諸費用も借りる条件を試したい場合は、借入希望総額に合わせて物件価格を調整し、諸費用欄は0にして試算できます。ただし、その場合は「物件価格」「自己資金」の表示が実際の内訳と異なります。</p></details>
+</section>
+<p><a href="./salary.html">← 年収・手取り計算へ戻る</a></p>
+</main><footer class="site-footer"><div class="site-footer-links"><a href="./about.html">このサイトについて</a><a href="./privacy.html">プライバシーポリシー</a><a href="./contact.html">お問い合わせ</a></div><div>© 2026 暮らしの計算ツール</div></footer>
+<div class="site-info-links" style="max-width:1050px;margin:22px auto 12px;padding:12px 16px;text-align:center;line-height:2;border-top:1px solid #dce5f0;font-size:14px"><a href="./about.html">このサイトについて</a> ｜ <a href="./privacy.html">プライバシーポリシー</a> ｜ <a href="./contact.html">お問い合わせ</a></div>
+<script>
+(function(){'use strict';
+const $=id=>document.getElementById(id);
+const yen=n=>Math.round(n).toLocaleString('ja-JP')+' 円';
+const fields=['price','down','rate','years','cost'];
+function calculateLoan(principal,annualRate,years,method){
+ const n=years*12,r=annualRate/1200;
+ if(principal===0)return {first:0,last:0,total:0,interest:0,annual:Array.from({length:years},(_,i)=>({year:i+1,paid:0,principal:0,interest:0,balance:0}))};
+ const monthly=method==='equal'?(r===0?principal/n:principal*r/(-Math.expm1(-n*Math.log1p(r)))):null;
+ const principalPart=principal/n;
+ let balance=principal,total=0,interest=0,first=0,last=0;
+ const annual=[];
+ for(let m=1;m<=n;m++){
+  const i=balance*r;
+  let p=method==='equal'?monthly-i:principalPart;
+  p=Math.min(balance,Math.max(0,p));
+  const paid=p+i;
+  if(m===1)first=paid;
+  if(m===n)last=paid;
+  balance=Math.max(0,balance-p);
+  total+=paid;interest+=i;
+  const idx=Math.floor((m-1)/12);
+  if(!annual[idx])annual[idx]={year:idx+1,paid:0,principal:0,interest:0,balance:0};
+  annual[idx].paid+=paid;annual[idx].principal+=p;annual[idx].interest+=i;annual[idx].balance=balance;
+ }
+ return {first,last,total,interest,annual};
+}
+function readInputs(){const v={};for(const id of fields){const raw=$(id).value.trim();const n=Number(raw);if(raw===''||!Number.isFinite(n)||n<0||n>100000)throw Error('数値を正しく入力してください。');v[id]=n;}
+ if(v.price<=0)throw Error('物件価格は0万円より大きくしてください。');
+ if(v.down>v.price)throw Error('頭金は物件価格以下にしてください。');
+ if(v.rate>30)throw Error('年利は0〜30%で入力してください。');
+ if(!Number.isInteger(v.years)||v.years<1||v.years>50)throw Error('返済期間は1〜50年の整数で入力してください。');
+ v.method=$('method').value;return v;}
+function drawChart(annual){const svg=$('chart');svg.replaceChildren();const ns='http://www.w3.org/2000/svg';const add=(tag,attrs,text)=>{const el=document.createElementNS(ns,tag);for(const [k,v] of Object.entries(attrs))el.setAttribute(k,String(v));if(text!==undefined)el.textContent=text;svg.appendChild(el);return el;};
+ const max=Math.max(1,...annual.map(a=>a.paid));const left=55,right=15,top=12,bottom=35,w=750-left-right,h=270-top-bottom;
+ for(let k=0;k<=4;k++){const y=top+h-h*k/4;add('line',{x1:left,y1:y,x2:750-right,y2:y,class:'gridline'});add('text',{x:left-6,y:y+4,'text-anchor':'end'},Math.round(max*k/4/10000)+'万');}
+ const barW=w/annual.length;
+ for(let i=0;i<annual.length;i++){const a=annual[i],x=left+i*barW+barW*.1,bw=Math.max(1,barW*.8);const hp=a.principal/max*h,hi=a.interest/max*h;add('rect',{x,y:top+h-hp,width:bw,height:hp,class:'principal'});add('rect',{x,y:top+h-hp-hi,width:bw,height:hi,class:'interest'});if(i===0||i===annual.length-1||(i+1)%5===0)add('text',{x:x+bw/2,y:top+h+18,'text-anchor':'middle'},a.year+'年');}
+}
+function show(){try{const v=readInputs();const principal=(v.price-v.down)*10000;const result=calculateLoan(principal,v.rate,v.years,v.method);
+ $('borrow').textContent=yen(principal);$('payment').textContent=yen(result.first);$('paymentHint').textContent=v.method==='principal'?'元金均等：初月の金額（最終月 '+yen(result.last)+'）':'元利均等：毎月ほぼ一定';
+ $('total').textContent=yen(result.total);$('interest').textContent=yen(result.interest);$('cash').textContent=yen((v.down+v.cost)*10000);$('overall').textContent=yen(result.total+(v.down+v.cost)*10000);
+ const tbody=$('schedule');tbody.replaceChildren();for(const a of result.annual){const tr=document.createElement('tr');for(const val of [a.year+'年目',yen(a.paid),yen(a.principal),yen(a.interest),yen(a.balance)]){const td=document.createElement('td');td.textContent=val;tr.appendChild(td);}tbody.appendChild(tr);}
+ drawChart(result.annual);
+ const compare=$('comparison');compare.replaceChildren();const rates=[v.rate,v.rate+.5,v.rate+1].filter(r=>r<=30);for(const r of rates){const z=calculateLoan(principal,r,v.years,v.method);const tr=document.createElement('tr');for(const val of [r.toFixed(2)+'%',yen(z.first),yen(z.interest),yen(z.total)]){const td=document.createElement('td');td.textContent=val;tr.appendChild(td);}compare.appendChild(tr);}
+ const terms=[v.years-10,v.years-5,v.years,v.years+5,v.years+10].filter((y,i,a)=>y>=1&&y<=50&&a.indexOf(y)===i).sort((a,b)=>a-b);const termBody=$('termComparison');termBody.replaceChildren();for(const y of terms){const z=calculateLoan(principal,v.rate,y,v.method);const tr=document.createElement('tr');if(y===v.years)tr.setAttribute('aria-current','true');for(const val of [y+'年'+(y===v.years?'（現在の条件）':''),yen(z.first),yen(z.interest),yen(z.total)]){const td=document.createElement('td');td.textContent=val;tr.appendChild(td);}termBody.appendChild(tr);}const shorter=terms.filter(y=>y<v.years).at(-1);if(shorter){const shortLoan=calculateLoan(principal,v.rate,shorter,v.method);$('termComparisonNote').textContent='現在の'+v.years+'年から'+shorter+'年へ短縮すると、初月返済額は'+yen(shortLoan.first-result.first)+'増え、総利息は'+yen(result.interest-shortLoan.interest)+'減る試算です。';}else{$('termComparisonNote').textContent='現在の返済期間が短いため、比較可能な長期の返済条件を表示しています。';}
+ $('error').textContent='';$('result').hidden=false;return true;
+ }catch(e){$('error').textContent=e.message;$('result').hidden=true;return false;}}
+ $('loanForm').addEventListener('submit',e=>{e.preventDefault();if(show())$('result').scrollIntoView({behavior:'smooth',block:'start'});});
+ for(const id of [...fields,'method'])$(id).addEventListener('input',()=>{$('result').hidden=true;$('error').textContent='入力内容が変更されました。「返済額を計算する」を押してください。';});
+ $('reset').addEventListener('click',()=>{$('price').value=4500;$('down').value=500;$('rate').value=1;$('years').value=35;$('cost').value=200;$('method').value='equal';show();});
+ // Numerical regression checks: zero interest, amortization balance, equal principal and increasing rates.
+ const t0=calculateLoan(1200000,0,10,'equal');
+ const t1=calculateLoan(30000000,1,35,'equal');
+ const t2=calculateLoan(30000000,1,35,'principal');
+ const t3=calculateLoan(30000000,2,35,'equal');
+ console.assert(Math.abs(t0.first-10000)<.001&&Math.abs(t0.interest)<.001,'zero-interest');
+ console.assert(Math.abs(t1.annual.at(-1).balance)<.01&&Math.abs(t1.total-30000000-t1.interest)<.01,'amortization');
+ console.assert(t2.first>t2.last&&t2.interest<t1.interest,'equal-principal');
+ console.assert(t3.first>t1.first&&t3.interest>t1.interest,'rate-increase');
+ show();
+})();
+</script>
+</body>
+</html>

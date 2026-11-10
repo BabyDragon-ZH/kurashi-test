@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head><meta name="google-adsense-account" content="ca-pub-7493976070389751">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="残業時間から残業代を無料で概算。深夜労働、法定休日労働、月60時間超の時間外労働などを分けて計算できます。" name="description"/>
+<meta content="index,follow" name="robots"/>
+<link href="https://babydragon-zh.github.io/overtime.html" rel="canonical"/>
+<title>残業代計算｜深夜・休日・月60時間超も無料試算 - 暮らしの計算ツール</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;color:#172b47;background:#f3f6fb;font-size:16px}*{box-sizing:border-box}body{margin:0;line-height:1.65}a{color:#115fa8}a:hover{text-decoration-thickness:2px}header{background:#153e70;color:#fff}header .wrap{max-width:1000px;margin:auto;padding:15px 18px;font-weight:700}header a{color:#fff;text-decoration:none}nav{background:#e7eff9;border-bottom:1px solid #cedcec}nav .wrap{max-width:1000px;margin:auto;padding:10px 18px;display:flex;gap:20px;flex-wrap:wrap}nav a{font-weight:650}nav a[aria-current="page"]{color:#183a64;text-decoration:none}main{max-width:1000px;margin:30px auto;padding:0 16px}h1{font-size:clamp(1.55rem,3vw,2rem);line-height:1.35;margin:0 0 12px}h2{font-size:1.2rem;margin:0 0 15px}h3{font-size:1.05rem;margin:20px 0 8px}p{margin:9px 0 14px}.muted,.hint{color:#50637c}.intro{max-width:800px}.panel{background:#fff;border:1px solid #dce5f1;border-radius:14px;padding:24px;margin:20px 0;box-shadow:0 3px 15px #16385e0b}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.field label{display:block;font-weight:700;margin-bottom:6px}.field input{display:block;width:100%;border:1px solid #91a9c5;border-radius:8px;padding:11px 12px;font:inherit;color:#172b47;background:#fff}.field input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #efaa28;outline-offset:2px}.hint{font-size:.84rem;margin:5px 0 0}.note{background:#fff7e7;border-left:4px solid #cf9224;border-radius:5px;padding:12px 15px}.info{background:#eef6ff;border-left:4px solid #3475c5;border-radius:5px;padding:12px 15px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}button{border:0;border-radius:9px;padding:12px 22px;font:inherit;font-weight:700;cursor:pointer;background:#1166b6;color:#fff}button.secondary{background:#e4edf7;color:#1a3c66}button:hover{filter:brightness(.94)}.error{color:#a91e19;font-weight:700;margin:14px 0 0}.error:empty{display:none}.total{font-size:clamp(1.8rem,5vw,2.5rem);font-weight:800;color:#095aa8;margin:2px 0 14px}.result-row{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid #e6edf5}.result-row span:last-child{text-align:right;font-weight:700;white-space:nowrap}.small{font-size:.87rem}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:500px}th,td{border-bottom:1px solid #e0e8f2;padding:10px;text-align:left;vertical-align:top}th{background:#f0f5fb}details{border-bottom:1px solid #e2e9f2;padding:13px 0}summary{cursor:pointer;font-weight:700}footer{text-align:center;color:#5b6c81;padding:24px 16px 40px}.pill{display:inline-block;font-size:.75rem;color:#28517d;background:#e6effa;border-radius:20px;padding:3px 10px;margin-bottom:10px}@media(max-width:650px){main{margin:20px auto}.panel{padding:17px}.grid{grid-template-columns:1fr}.result-row{font-size:.9rem}}
+</style>
+<style>
+/* 2026 site-wide visual refresh: styles only, calculator JS untouched */
+:root{--ui-ink:#17365e;--ui-blue:#2787e8;--ui-border:#e0eaf5;--ui-sky:#edf7ff;--ui-shadow:0 10px 30px rgba(43,99,153,.075)}
+html{scroll-behavior:smooth}body{background:linear-gradient(180deg,#f0f8ff 0,#f8fbff 460px,#f8fbff 100%)!important;color:var(--ui-ink)!important;font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif!important;line-height:1.65}*{box-sizing:border-box}
+.site-top{background:rgba(255,255,255,.97)!important;border-bottom:1px solid #e1edf8!important;padding:0!important;color:var(--ui-ink)!important;box-shadow:0 3px 16px rgba(33,98,158,.04)}
+.site-top .site-top-inner{max-width:1180px;margin:auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.site-brand{display:flex;align-items:center;gap:10px;text-decoration:none!important;color:#17518c!important;font-size:1.18rem;font-weight:800;line-height:1.25}.brand-mark{display:grid;place-items:center;width:39px;height:39px;border-radius:11px;background:linear-gradient(145deg,#4b9ded,#2175d6);color:white;font-size:23px;box-shadow:0 5px 12px #448bd42b}.brand-sub{display:block;font-size:.67rem;color:#7d91a9;font-weight:500;margin-top:2px}
+.site-nav{background:#fff!important;border-bottom:1px solid #e5edf6!important;padding:0!important;text-align:left!important}.site-nav-inner{max-width:1180px;margin:auto;padding:8px 18px;display:flex;gap:5px;align-items:center;flex-wrap:wrap;justify-content:center}.site-nav a{display:inline-flex;align-items:center;gap:5px;padding:9px 12px!important;border-radius:10px;color:#526d8b!important;text-decoration:none!important;font-size:.88rem;font-weight:700;white-space:nowrap}.site-nav a:hover,.site-nav a[aria-current="page"]{background:#eaf4ff;color:#1874d0!important}.nav-emoji{font-size:1.1rem;line-height:1}
+main{max-width:1120px!important;margin:24px auto 40px!important;padding:0 18px!important}
+.ui-hero{position:relative;overflow:hidden;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(245px,.8fr);align-items:center;gap:16px;background:linear-gradient(115deg,#f5fbff,#e8f5ff 70%,#e9f7f1);border:1px solid #dcecf8;border-radius:24px;padding:26px 32px 12px;margin:0 0 22px;box-shadow:var(--ui-shadow)}
+.ui-hero:before{content:"";position:absolute;width:250px;height:250px;border-radius:50%;background:#ffffff70;right:-65px;top:-130px}.ui-hero h1{font-size:clamp(1.65rem,3.3vw,2.55rem)!important;color:#143b70!important;letter-spacing:.01em;line-height:1.4;margin:7px 0 10px!important}.ui-hero p{font-size:.98rem!important;color:#55728f!important;line-height:1.85;margin:0 0 14px}.ui-eyebrow{display:inline-block;background:#fff;color:#3380c8;font-weight:750;font-size:.78rem;padding:5px 12px;border-radius:99px;box-shadow:0 3px 10px #438ac91c}.ui-art{width:100%;max-width:390px;justify-self:center;position:relative;z-index:1}.ui-art svg{width:100%;height:auto;display:block;filter:drop-shadow(0 7px 10px #6da5cf14)}
+.ui-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:0 0 24px}.ui-link{display:flex;align-items:center;gap:15px;text-decoration:none!important;background:white;border:1px solid #e2ecf7;border-radius:17px;padding:16px 18px;box-shadow:var(--ui-shadow);color:#1c4775!important;transition:transform .18s,box-shadow .18s}.ui-link:hover{transform:translateY(-3px);box-shadow:0 14px 26px #4d87c01c}.ui-link .ui-link-icon{width:53px;height:53px;border-radius:15px;background:#eaf5ff;display:grid;place-items:center;font-size:1.9rem;flex-shrink:0}.ui-link strong{display:block;font-size:1.05rem}.ui-link small{display:block;color:#748ca4;font-size:.8rem;margin-top:3px}.ui-link .ui-arrow{margin-left:auto;color:#2787e8;font-size:1.4rem}
+.ui-section-label{margin:28px 0 13px;font-size:1.22rem;color:#204f81}.ui-divider{border:0;border-top:1px solid #e3edf8;margin:22px 0}
+main .card,main .panel,main section.panel,main #result,main #results{border:1px solid var(--ui-border)!important;border-radius:18px!important;box-shadow:var(--ui-shadow)!important;background:#fff!important}main .card,main .panel{padding:clamp(17px,2.8vw,26px)!important}main h2{color:#214e81!important}main input,main select,main textarea{border:1px solid #cbdced!important;border-radius:9px!important;max-width:100%}main input:focus,main select:focus{outline:2px solid #65a8ed!important;outline-offset:1px}main button,main button[type="submit"]{border-radius:11px!important;background:#2987e6!important;color:white!important;box-shadow:0 4px 10px #2d80cf20}main button.secondary,main button[type="reset"]{background:#e9f3fd!important;color:#205789!important}main .hero{background:#eef7ff!important;border-radius:14px!important}main .metric,main .total-box,main .highlight{border-radius:13px!important}main .pill{background:#e9f5ff!important;color:#2776bd!important}main .info,main .warning{border-radius:11px!important}
+.site-footer{margin-top:30px;background:#fff!important;border-top:1px solid #e1edf8!important;text-align:center!important;padding:27px 18px!important;color:#71859a!important;font-size:.87rem}.site-footer a{color:#437aaa!important;text-decoration:none}.site-footer a:hover{text-decoration:underline}.site-footer-links{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 20px;margin-bottom:10px}
+@media(max-width:720px){.site-top .site-top-inner{padding:10px 15px;justify-content:center}.site-nav-inner{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;padding:8px 12px;-webkit-overflow-scrolling:touch}.site-nav a{font-size:.79rem;padding:8px 10px!important}.ui-hero{grid-template-columns:1fr;padding:20px 20px 4px;gap:0}.ui-hero h1{font-size:1.72rem!important}.ui-art{max-width:285px}.ui-links{grid-template-columns:1fr;gap:10px}.ui-link{padding:13px 15px}main{margin-top:16px!important;padding:0 13px!important}main .card,main .panel{padding:17px!important}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ui-link{transition:none}}
+</style><style>
+/* Shared A3 illustration system, scoped to prevent calculator style regressions */
+body{background:#edf7ff!important;color:#14366c}
+.site-header{position:relative!important;background:#fff!important;color:#12366d!important;border-bottom:1px solid #d7eafa!important;box-shadow:0 2px 15px #c9e1f144!important}
+.site-header .head-inner{max-width:1440px;margin:auto;padding:12px 28px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.site-header .brand{display:flex;align-items:center;gap:12px;color:#12366d!important;text-decoration:none!important;font-weight:700}
+.site-header .brand-mark{width:47px;height:47px;background:#268bf2;border-radius:12px;display:grid;place-items:center;color:white;font-size:26px;box-shadow:0 4px 0 #c0ddfa}
+.site-header .brand strong{display:block;font-size:20px;line-height:1.3}.site-header .brand small{display:block;color:#6680a4;font-size:11px;font-weight:400}
+.site-header .nav{display:flex;align-items:center;flex-wrap:wrap;gap:4px;background:transparent!important;border:0!important;padding:0!important}
+.site-header .nav a{display:inline-flex;align-items:center;gap:6px;padding:10px 12px;border-radius:12px;color:#174679!important;font-weight:700;font-size:13px;text-decoration:none!important}
+.site-header .nav a.active,.site-header .nav a:hover{background:#e7f3ff!important;color:#0879e8!important}
+.site-header .nav-icon{display:block;width:19px;height:19px;flex-shrink:0}
+main{max-width:1300px!important;margin:20px auto!important}
+main>.ui-hero.a3-banner{background:#e2f5ff var(--a3-banner) center center/cover no-repeat!important;min-height:260px!important;display:flex!important;align-items:center!important;padding:34px 43px!important;border-radius:22px!important;box-shadow:0 8px 26px #a3c9e733!important;border:1px solid #fff!important;position:relative!important;overflow:hidden!important;isolation:isolate}
+main>.ui-hero.a3-banner>div:first-child{width:53%!important;max-width:600px!important;position:relative!important;z-index:1!important}
+main>.ui-hero.a3-banner .ui-eyebrow{background:#fffffff0!important;color:#127be5!important;border:1px solid #c7e5ff!important;border-radius:99px!important;padding:7px 15px!important;display:inline-block!important;font-weight:700!important;font-size:13px!important}
+main>.ui-hero.a3-banner h1{color:#0c316b!important;font-size:clamp(26px,3.2vw,43px)!important;line-height:1.24!important;margin:15px 0!important}
+main>.ui-hero.a3-banner p{color:#184474!important;font-size:15px!important;line-height:1.8!important;max-width:560px!important}
+main>.ui-hero.a3-banner .ui-art{display:none!important}
+@media(max-width:760px){.site-header .head-inner{padding:12px 15px}.site-header .nav{width:100%;overflow-x:auto;flex-wrap:nowrap;white-space:nowrap}.site-header .nav a{padding:8px}.site-header .brand strong{font-size:18px}main>.ui-hero.a3-banner{min-height:300px!important;align-items:flex-start!important;padding:22px!important;background-position:67% center!important}main>.ui-hero.a3-banner>div:first-child{width:88%!important}main>.ui-hero.a3-banner h1{font-size:28px!important}main>.ui-hero.a3-banner p{font-size:12px!important;max-width:76%!important}}
+</style><style id="mobile-banner-readability">
+/* Mobile banner layout: identical to the approved home and salary pages. */
+@media (max-width:650px){
+ main>.ui-hero.a3-banner{display:flex!important;flex-direction:column!important;align-items:stretch!important;justify-content:flex-start!important;min-height:0!important;padding:20px 18px 0!important;background-image:none!important;background-color:#eaf7ff!important;overflow:hidden!important;gap:0!important}
+ main>.ui-hero.a3-banner>div:first-child{width:100%!important;max-width:100%!important;flex:none!important;position:relative!important;z-index:2!important}
+ main>.ui-hero.a3-banner h1{font-size:clamp(25px,7vw,30px)!important;line-height:1.3!important;margin:12px 0!important}
+ main>.ui-hero.a3-banner p{max-width:100%!important;font-size:13px!important;line-height:1.65!important;margin:0!important}
+ main>.ui-hero.a3-banner::before{content:''!important;display:block!important;position:relative!important;inset:auto!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;border-radius:0!important;width:calc(100% + 36px)!important;height:auto!important;aspect-ratio:4.5/1!important;flex-shrink:0!important;margin:12px -18px 0!important;background:var(--a3-banner) center center/100% 100% no-repeat!important;opacity:1!important;transform:none!important;pointer-events:none!important;z-index:0!important}
+ main>.ui-hero.a3-banner::after{display:none!important;content:none!important}
+}
+</style></head>
+<body>
+<header class="site-header"><div class="head-inner"><a class="brand" href="./index.html"><span class="brand-mark">▦</span><span><strong>暮らしの計算ツール</strong><small>暮らしの計算を、もっとシンプルに</small></span></a><nav aria-label="メインナビゲーション" class="nav"><a class="" href="./index.html"><img alt="" aria-hidden="true" class="nav-icon" src="./assets/nav-home.svg"/>ホーム</a><a class="" href="./salary.html"><img alt="" aria-hidden="true" class="nav-icon" src="./assets/nav-salary.svg"/>年収・手取り</a><a class="active" href="./overtime.html"><img alt="" aria-hidden="true" class="nav-icon" src="./assets/nav-overtime.svg"/>残業代</a><a class="" href="./hourly.html"><img alt="" aria-hidden="true" class="nav-icon" src="./assets/nav-hourly.svg"/>時給</a><a class="" href="./mortgage.html"><img alt="" aria-hidden="true" class="nav-icon" src="./assets/nav-mortgage.svg"/>住宅ローン</a><a class="" href="./car.html"><img alt="" aria-hidden="true" class="nav-icon" src="./assets/nav-car.svg"/>車の維持費</a></nav></div></header>
+<main><section aria-label="ページの紹介" class="ui-hero a3-banner" style="--a3-banner:url('./assets/banner-overtime.webp')"><div><span class="ui-eyebrow">無料・登録不要  |  暮らしの計算ツール</span><h1>残業代計算</h1><p class="intro muted">残業時間から残業代をかんたんに計算。 深夜・休日・月60時間超の割増賃金も確認できます。</p></div></section>
+<span class="pill">無料・登録不要</span>
+<div class="info small"><strong>対象：</strong>原則的な労働時間制度で、法定最低割増率を適用する概算です。フレックスタイム制・変形労働時間制・管理監督者等の特殊な取扱いは自動判定しません。</div>
+<form id="calcForm" novalidate="">
+<section aria-labelledby="h-base" class="panel"><h2 id="h-base">① 割増計算の基礎時給</h2>
+<div class="grid"><div class="field"><label for="hourly">基礎時給（円）</label><input id="hourly" inputmode="decimal" max="1000000" min="0.01" name="hourly" required="" step="any" type="number" value="2000"/><p class="hint">割増賃金の算定基礎となる1時間当たりの賃金。月給を単純に総労働時間で割るとは限りません。</p></div></div>
+</section>
+<section aria-labelledby="h-hours" class="panel"><h2 id="h-hours">② 1か月の労働時間</h2>
+<div class="grid">
+<div class="field"><label for="overtime">法定時間外労働の合計（時間）</label><input id="overtime" inputmode="decimal" max="744" min="0" required="" step="any" type="number" value="20"/><p class="hint">原則1日8時間・週40時間を超える労働。法定休日労働は含めません。</p></div>
+<div class="field"><label for="otNight">うち深夜の法定時間外労働（時間）</label><input id="otNight" inputmode="decimal" max="744" min="0" required="" step="any" type="number" value="0"/><p class="hint">上の時間外労働のうち22:00〜翌5:00に働いた時間。</p></div>
+<div class="field"><label for="nightRegular">法定時間内の深夜労働（時間）</label><input id="nightRegular" inputmode="decimal" max="744" min="0" required="" step="any" type="number" value="0"/><p class="hint">通常賃金が別途支払われる前提で、深夜割増25%分のみを計算します。</p></div>
+<div class="field"><label for="holiday">法定休日労働（時間）</label><input id="holiday" inputmode="decimal" max="744" min="0" required="" step="any" type="number" value="0"/><p class="hint">法律上の法定休日の労働。会社の「所定休日」とは異なる場合があります。</p></div>
+<div class="field"><label for="holidayNight">うち深夜の法定休日労働（時間）</label><input id="holidayNight" inputmode="decimal" max="744" min="0" required="" step="any" type="number" value="0"/><p class="hint">法定休日労働のうち22:00〜翌5:00に働いた時間。</p></div>
+<div class="field"><label for="prescribed">法定時間内の所定外労働（時間）</label><input id="prescribed" inputmode="decimal" max="744" min="0" required="" step="any" type="number" value="0"/><p class="hint">所定労働時間を超えるが法定時間内の労働。ここでは通常賃金100%で概算（すでに支給済みなら0）。</p></div>
+</div>
+<div class="note small" style="margin-top:18px"><strong>月60時間超と深夜の重なり：</strong>時間外労働の深夜時間は、どの時間帯に発生したかによらず、時間外割増とは別に25%を加算します。月60時間超の時間外労働は、該当部分に50%の割増を適用します。</div>
+<div class="actions"><button type="submit">残業代を計算する</button><button class="secondary" id="reset" type="button">入力をリセット</button></div>
+<p aria-live="assertive" class="error" id="error" role="alert"></p>
+</section>
+</form>
+<section aria-labelledby="h-result" class="panel"><h2 id="h-result">③ 計算結果</h2><p class="muted small">入力条件に基づく追加支給額の概算（税・社会保険料控除前）</p>
+<div aria-live="polite" class="total" id="total">—</div>
+<div class="result-row"><span>法定時間外労働（60時間以内・125%）</span><span id="otBase">—</span></div>
+<div class="result-row"><span>法定時間外労働（60時間超・150%）</span><span id="otOver60">—</span></div>
+<div class="result-row"><span>法定時間外労働中の深夜割増（追加25%）</span><span id="otNightExtra">—</span></div>
+<div class="result-row"><span>法定時間内の深夜割増（25%分のみ）</span><span id="nightExtra">—</span></div>
+<div class="result-row"><span>法定休日労働（135%）</span><span id="holidayBase">—</span></div>
+<div class="result-row"><span>法定休日労働中の深夜割増（追加25%）</span><span id="holidayNightExtra">—</span></div>
+<div class="result-row"><span>法定時間内の所定外労働（100%）</span><span id="prescribedBase">—</span></div>
+<p class="small muted">各項目の計算途中では丸めず、表示時のみ1円単位で四捨五入します。表示内訳の合計と総額に1円程度の差が出る場合があります。実際の給与計算の端数処理とは異なる場合があります。</p>
+</section>
+<section class="panel" aria-labelledby="scenario-title"><h2 id="scenario-title">勤務パターン別に試す</h2><p class="muted small">以下の例を選ぶと、基礎時給以外の入力値が切り替わります。各パターンの金額は税・社会保険料控除前の概算です。ご自身の勤務記録に合わせて変更できます。</p><div class="actions" id="scenarioButtons"><button type="button" class="secondary" data-scenario="standard">平日残業20時間</button><button type="button" class="secondary" data-scenario="night">深夜残業を含む月</button><button type="button" class="secondary" data-scenario="long">月60時間超の残業</button><button type="button" class="secondary" data-scenario="holiday">法定休日に勤務</button></div><p class="hint" id="scenarioDescription" aria-live="polite">例を選択すると入力欄と計算結果が更新されます。</p><div class="table-wrap"><table><thead><tr><th>例</th><th>時間の内訳</th><th>基礎時給2,000円の場合</th></tr></thead><tbody><tr><td>平日残業</td><td>法定時間外20時間</td><td>50,000円</td></tr><tr><td>深夜残業</td><td>法定時間外20時間（うち深夜8時間）</td><td>54,000円</td></tr><tr><td>60時間超</td><td>法定時間外70時間</td><td>180,000円</td></tr><tr><td>法定休日</td><td>法定休日8時間（うち深夜2時間）</td><td>22,600円</td></tr></tbody></table></div><p class="small muted">法定休日労働は法定時間外労働の60時間超判定には含めていません。深夜労働の割増は該当する区分に追加しています。固定残業代や既払賃金がある場合、表の金額がそのまま追加支給額になるとは限りません。</p></section>
+<section class="panel seo-guide"><h2>残業代の計算例：基礎時給2,000円の場合</h2><p>例えば、割増計算の基礎時給が2,000円で、法定時間外労働が月10時間の場合、法定最低割増率25％を用いた支払額の目安は「2,000円 × 1.25 × 10時間 ＝ 25,000円」です。これは税金などを差し引く前の金額で、入力した労働時間の区分や勤務先の賃金規程によって変わります。</p><p>すでに通常賃金部分が支払われている場合、追加で必要な割増部分だけを確認するなど、給与明細の支払済み項目との重複に注意してください。</p><h2>残業時間を入力するときの確認ポイント</h2><ul><li><strong>法定時間外：</strong>原則として1日8時間・週40時間を超える労働を確認します。例外や特例もあります。</li><li><strong>深夜：</strong>原則22時～翌5時の労働です。時間外労働と重なる場合は割増率の扱いが異なります。</li><li><strong>休日：</strong>法定休日か所定休日かを区別します。名称だけで一律に判断しないでください。</li></ul><p>時間区分が分からない場合は、勤務表・就業規則・給与明細を照らし合わせて確認してください。</p><p>関連ツール：<a href="./hourly.html">時給計算</a> ／ <a href="./salary.html">年収・手取り計算</a></p></section>
+<section class="panel"><h2>割増率と計算方法</h2><div class="table-wrap"><table><thead><tr><th>区分</th><th>この計算機で使う倍率</th><th>計算上の扱い</th></tr></thead><tbody>
+<tr><td>法定時間外（月60時間以内）</td><td>125%</td><td>基礎時給 × 時間 × 1.25</td></tr>
+<tr><td>法定時間外（月60時間超の部分）</td><td>150%</td><td>基礎時給 × 時間 × 1.50</td></tr>
+<tr><td>深夜（22:00〜翌5:00）</td><td>追加25%</td><td>時間外・法定休日に重なる場合も追加</td></tr>
+<tr><td>法定休日</td><td>135%</td><td>基礎時給 × 時間 × 1.35</td></tr>
+<tr><td>法定時間内の所定外</td><td>100%（仮定）</td><td>通常賃金が未払いの場合の概算</td></tr>
+</tbody></table></div>
+<p class="small">例：基礎時給2,000円、法定時間外労働20時間（深夜なし）の場合、2,000 × 20 × 1.25 ＝ <strong>50,000円</strong>。月70時間なら60時間分150,000円＋超過10時間分30,000円＝<strong>180,000円</strong>。</p>
+<p class="small"><strong>計算結果の読み方：</strong>「法定時間外」「法定休日」の金額は、通常賃金100%を含む割増賃金の概算です。一方、「通常勤務中の深夜」は通常賃金が別途支払われている前提で追加25%のみ計上しています。固定残業代・既払賃金・実際の未払額は判定できません。結果の合計をそのまま「未払い残業代」として請求できる金額と解釈しないでください。</p>
+<div class="note small"><strong>重要：</strong>法定休日労働は月60時間の法定時間外労働には算入しません。法定休日の深夜労働は135%＋25%＝160%が基本です。会社の割増率が法定最低を上回る場合、この計算機はその上乗せ分を反映しません。</div>
+</section>
+<section class="panel"><h2>よくある質問</h2>
+<details><summary>残業代の基礎時給はどう求めますか？</summary><p>月給制の場合、割増賃金の算定基礎に含まれる賃金を、所定労働時間に基づく1か月平均所定労働時間などで除して求めます。すべての手当が一律に算定基礎から除外されるわけではありません。給与規程を確認してください。</p></details>
+<details><summary>月60時間を超えた場合はどうなりますか？</summary><p>法定時間外労働の月60時間超の部分について、原則50%以上の割増が必要です。深夜労働が重なれば、さらに25%以上の深夜割増が加わります。代替休暇制度などの例外的な取扱いはこの計算機では扱いません。</p></details>
+<details><summary>休日出勤はすべて135%ですか？</summary><p>いいえ。135%の対象は法律上の「法定休日」の労働です。法定休日以外の所定休日の出勤は、法定時間外労働に当たるかどうかなどで扱いが変わります。</p></details>
+<details><summary>計算結果は手取り額ですか？</summary><p>いいえ。税金・社会保険料を差し引く前の概算です。既に基本給に含まれている賃金や固定残業代との精算も自動判定しません。</p></details>
+<details><summary>深夜の通常勤務はなぜ25%だけですか？</summary><p>通常勤務分の賃金100%は別途支払われていると仮定し、この計算機では追加の深夜割増25%分のみを計上するためです。</p></details>
+</section>
+<section class="panel"><h2>利用上の注意・参考情報</h2><p>このページは一般的な法定最低割増率を用いる簡易シミュレーターです。法定時間内の所定外労働の賃金支払状況、変形労働時間制、フレックスタイム制、裁量労働制、管理監督者の取扱い、固定残業代、割増賃金の算定基礎から除外できる手当、端数処理、代替休暇、会社独自の規程などは個別に確認が必要です。計算結果を未払賃金の確定額として使用しないでください。</p>
+<p>参考：<a href="https://www.mhlw.go.jp/" rel="noopener noreferrer" target="_blank">厚生労働省（公式サイト）</a>、<a href="https://elaws.e-gov.go.jp/document?lawid=322AC0000000049" rel="noopener noreferrer" target="_blank">労働基準法（e-Gov法令検索）</a>。実際の支給額は勤務先の就業規則・賃金規程・給与明細などをご確認ください。</p>
+<p class="small muted">入力した数値はこのページ内のJavaScriptで計算します。入力内容を当サイトのサーバーへ送信する仕組みはありません。</p>
+</section>
+<p><a href="./salary.html">← 年収・手取り計算へ戻る</a></p>
+</main><footer class="site-footer"><div class="site-footer-links"><a href="./about.html">このサイトについて</a><a href="./privacy.html">プライバシーポリシー</a><a href="./contact.html">お問い合わせ</a></div><div>© 2026 暮らしの計算ツール</div></footer>
+<div class="site-info-links" style="max-width:1050px;margin:22px auto 12px;padding:12px 16px;text-align:center;line-height:2;border-top:1px solid #dce5f0;font-size:14px"><a href="./about.html">このサイトについて</a> ｜ <a href="./privacy.html">プライバシーポリシー</a> ｜ <a href="./contact.html">お問い合わせ</a></div>
+<script>
+(function(){'use strict';
+const ids=['hourly','overtime','otNight','nightRegular','holiday','holidayNight','prescribed'];
+const outputIds=['total','otBase','otOver60','otNightExtra','nightExtra','holidayBase','holidayNightExtra','prescribedBase'];
+const $=id=>document.getElementById(id);
+const yen=n=>new Intl.NumberFormat('ja-JP',{style:'currency',currency:'JPY',maximumFractionDigits:0}).format(n);
+function clear(){for(const id of outputIds)$(id).textContent='—';}
+function compute(v){const h=v.hourly;const first=Math.min(v.overtime,60);const over=Math.max(v.overtime-60,0);const amounts={otBase:h*first*1.25,otOver60:h*over*1.5,otNightExtra:h*v.otNight*.25,nightExtra:h*v.nightRegular*.25,holidayBase:h*v.holiday*1.35,holidayNightExtra:h*v.holidayNight*.25,prescribedBase:h*v.prescribed};return {amounts,total:Object.values(amounts).reduce((a,b)=>a+b,0)};}
+function calculate(){const v={};for(const id of ids){const raw=$(id).value.trim();const n=Number(raw);if(raw===''||!Number.isFinite(n)||n<0||(id==='hourly'&&n<=0)||(id==='hourly'&&n>1000000)||(id!=='hourly'&&n>744)){clear();$('error').textContent='入力値を確認してください。基礎時給は0円より大きく100万円以下、各時間は0〜744時間で入力してください。';return false;}v[id]=n;}
+if(v.otNight>v.overtime||v.holidayNight>v.holiday){clear();$('error').textContent='「うち深夜」の時間は、それぞれの合計時間以下にしてください。';return false;}
+if(v.overtime+v.nightRegular+v.holiday+v.prescribed>744){clear();$('error').textContent='労働時間の合計が1か月の最大744時間を超えています。入力を確認してください。';return false;}
+$('error').textContent='';const result=compute(v);for(const [id,n] of Object.entries(result.amounts))$(id).textContent=yen(n);$('total').textContent=yen(result.total);return true;}
+const scenarios={standard:{overtime:20,otNight:0,nightRegular:0,holiday:0,holidayNight:0,prescribed:0,description:'法定時間外労働20時間をすべて通常時間帯に行った例です。'},night:{overtime:20,otNight:8,nightRegular:0,holiday:0,holidayNight:0,prescribed:0,description:'法定時間外20時間のうち8時間が22時〜翌5時に該当する例です。'},long:{overtime:70,otNight:0,nightRegular:0,holiday:0,holidayNight:0,prescribed:0,description:'月60時間以内は125%、超過した10時間は150%として計算します。'},holiday:{overtime:0,otNight:0,nightRegular:0,holiday:8,holidayNight:2,prescribed:0,description:'法定休日8時間のうち深夜2時間を含む例です。'}};
+$('scenarioButtons').addEventListener('click',e=>{const btn=e.target.closest('button[data-scenario]');if(!btn)return;const v=scenarios[btn.dataset.scenario];if(!v)return;for(const [id,n] of Object.entries(v))if(id!=='description')$(id).value=n;$('scenarioDescription').textContent=v.description;calculate();});
+$('calcForm').addEventListener('submit',e=>{e.preventDefault();calculate();});
+for(const id of ids)$(id).addEventListener('input',()=>{clear();$('error').textContent='入力を変更しました。「残業代を計算する」を押して結果を更新してください。';});
+$('reset').addEventListener('click',()=>{const defaults={hourly:2000,overtime:20,otNight:0,nightRegular:0,holiday:0,holidayNight:0,prescribed:0};for(const [id,n] of Object.entries(defaults))$(id).value=n;calculate();});
+calculate();
+})();
+</script>
+</body></html>
